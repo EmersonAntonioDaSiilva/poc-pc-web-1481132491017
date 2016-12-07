@@ -9,6 +9,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.inject.Inject;
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioFormat.Encoding;
 import javax.sound.sampled.AudioInputStream;
@@ -26,14 +27,11 @@ public class Speech2TextManager {
 
 	private static final Set<Session> sessions = Collections.synchronizedSet(new HashSet<Session>());
 
+	@Inject
 	private Conversation conversation;
+
+	@Inject
 	private SpeechToTextService speechToText;
-
-	public Speech2TextManager() {
-		conversation = new Conversation();
-		speechToText = new SpeechToTextService();
-
-	}
 
 	@OnOpen
 	public void open(Session session, EndpointConfig conf) {

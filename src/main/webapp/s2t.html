@@ -31,9 +31,8 @@
 	function recorderProcess(e) {
 		if (recording) {
 			var left = e.inputBuffer.getChannelData(0);
-// 			var sendBuffer = convertFloat32ToInt16(left);
-// 			ws.send(sendBuffer);
-			ws.send(left);
+			var sendBuffer = convertFloat32ToInt16(left);
+			ws.send(sendBuffer);
 			}
 	}
 
@@ -49,7 +48,11 @@
 	function WebSocketTest() {
 		if ("WebSocket" in window) {
 			recording = true;
-			ws = new WebSocket("ws://localhost:8080/poc-pc-web/speech2text");
+			
+			alert("PathName  ="+ window.location.pathname);// Returns path only
+			alert("PathName  ="+ window.location.hostname);// Returns path only
+			
+			ws = new WebSocket("ws://"+ window.location.hostname + ":" + window.location.port  +  "/poc-pc-web/speech2text");
 
 			// Let us open a web socket
 			ws.onopen = function() {

@@ -17,11 +17,7 @@ import javax.ws.rs.Produces;
 public class ChatManager {
 
 	@Inject
-	Conversation conversation;
-
-	public ChatManager() {
-		//conversation = new Conversation();
-	}
+	private Conversation conversation;
 
 	@GET
 	@Path("/json/{dialog}")
