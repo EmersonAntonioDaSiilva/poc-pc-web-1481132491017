@@ -24,6 +24,7 @@ public class Conversation {
 
 	private ConversationService service;
 	private MessageRequest newMessage;
+
 	private String workspaceId = "acfc6b01-ee0a-4614-ad94-858a33807290";
 
 	public Conversation() {
