@@ -52,7 +52,7 @@
 			if('localhost' == window.location.hostname){
 				ws = new WebSocket("ws://"+ window.location.hostname + ":" + window.location.port  +  "/poc-pc-web/speech2text");
 			}else{
-				ws = new WebSocket("ws://"+ window.location.hostname + ":" + window.location.port  +  "/speech2text");
+				ws = new WebSocket("ws://"+ window.location.hostname  +  "/speech2text");
 			}
 			
 			// Let us open a web socket
