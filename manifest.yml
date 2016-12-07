@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: poc-pc-web
+  host: poc-pc-web
+  disk_quota: 1024M
+  services:
+  - Conversation-PC
+  - S2T-PC
+  - availability-monitoring-auto
