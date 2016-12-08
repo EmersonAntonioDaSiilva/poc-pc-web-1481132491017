@@ -1,0 +1,467 @@
+[
+	{
+		"name" :   "1º DP - Sé",
+		"Latitude": -23.5569628,
+		"Longitude": -46.6365295
+	},
+	{
+	    "name" :   "2º DP - Bom Retiro",
+		"Latitude": -23.5232008,
+		"Longitude": -46.6465571
+	},
+	{
+	    "name" :   "3º DP - Santa Efigênia",
+		"Latitude": -23.5394499,
+		"Longitude": -46.6418222
+	},
+	{
+	    "name" :   "4º DP - Consolação",
+		"Latitude": -23.5505977,
+		"Longitude": -46.652076
+	},
+	{
+	    "name" :   "5º DP - Aclimação",
+		"Latitude": -23.5655047,
+		"Longitude": -46.6402752
+	},
+	{
+	    "name" :   "6º DP - Cambuci (Atrás do Hospital Cruz Azul)",
+		"Latitude": -23.5676202,
+		"Longitude": -46.6259155
+	},
+	{
+	    "name" :   "12º DP - Pari",
+		"Latitude": -23.5298608,
+		"Longitude": -46.6146361
+	},
+	{
+	    "name" :   "77º DP - Santa Cecília",
+		"Latitude": -23.5367598,
+		"Longitude": -46.6505469
+	},
+	{
+	    "name" :   "9º DP - Carandiru",
+		"Latitude": -23.5032441,
+		"Longitude": -46.6151119
+	},
+	{
+	    "name" :   "13º DP - Casa Verde",
+		"Latitude": -23.5004539,
+		"Longitude": -46.6514004
+	},
+	{
+	    "name" :   "19º DP - Vila Maria",
+		"Latitude": -23.517843,
+		"Longitude": -46.5870539
+	},
+	{
+	    "name" :   "20º DP - Água Fria",
+		"Latitude": -23.4779655,
+		"Longitude": -46.6227346
+	},
+	{
+	    "name" :   "28º DP - Freguesia Do Ó",
+		"Latitude": -23.494724,
+		"Longitude": -46.7000537
+	},
+	{
+	    "name" :   "33º DP - Pirituba",
+		"Latitude": -23.4973232,
+		"Longitude": -46.7479819
+	},
+	{
+	    "name" :   "38º DP - Vila Amália",
+		"Latitude": -23.4696402,
+		"Longitude": -46.6504731
+	},
+	{
+	    "name" :   "39º DP - Vila Gustavo",
+		"Latitude": -23.4833831,
+		"Longitude": -46.5921039
+	},
+	{
+	    "name" :   "40º DP - Vila Santa Maria",
+		"Latitude": -23.494313,
+		"Longitude": -46.6801196
+	},
+	{
+	    "name" :   "45º DP - Vila Brasilândia",
+		"Latitude": -23.4690051,
+		"Longitude": -46.6921044
+	},
+	{
+	    "name" :   "46º DP - Perus",
+		"Latitude": -23.4044006,
+		"Longitude": -46.7402279
+	},
+	{
+	    "name" :   "72º DP - Vila Penteado",
+		"Latitude": -23.4635218,
+		"Longitude": -46.6810369
+	},
+	{
+	    "name" :   "73º DP - Jaçanã",
+		"Latitude": -23.4586306,
+		"Longitude": -46.5874298
+	},
+	{
+	    "name" :   "74º DP - Jaraguá",
+		"Latitude": -23.4457366,
+		"Longitude": -46.7190485
+	},
+	{
+	    "name" :   "87º DP - Vila Pereira Barreto",
+		"Latitude": -23.4819928,
+		"Longitude": -46.727412
+	},
+	{
+	    "name" :   "90º DP - Parque Novo Mundo",
+		"Latitude": -23.5014314,
+		"Longitude": -46.5708803
+	},
+	{
+	    "name" :   "11º DP - Santo Amaro",
+		"Latitude": -23.6468868,
+		"Longitude": -46.7096423
+	},
+	{
+	    "name" :   "16º DP - Vila Clementino",
+		"Latitude": -23.6017882,
+		"Longitude": -46.6399548
+	},
+	{
+	    "name" :   "17º DP - Ipiranga",
+		"Latitude": -23.5909015,
+		"Longitude": -46.6109132
+	},
+	{
+	    "name" :   "25º DP – Parelheiros",
+		"Latitude": -23.8260383,
+		"Longitude": -46.7377335
+	},
+	{
+	    "name" :   "26º DP - Sacomã",
+		"Latitude": -23.6227807,
+		"Longitude": -46.6043451
+	},
+	{
+	    "name" :   "27º DP - Campo Belo",
+		"Latitude": -23.6152646,
+		"Longitude": -46.6771816
+	},
+	{
+	    "name" :   "34º DP – Vila Sônia/ Morumbi",
+		"Latitude": -23.5880807,
+		"Longitude": -46.7290283
+	},
+	{
+	    "name" :   "35º DP - Jabaquara",
+		"Latitude": -23.639544,
+		"Longitude": -46.645395
+	},
+	{
+	    "name" :   "36º DP - Vila Mariana",
+		"Latitude": -23.5792323,
+		"Longitude": -46.6530816
+	},
+	{
+	    "name" :   "37º DP - Campo Limpo",
+		"Latitude": -23.6324305,
+		"Longitude": -46.7726329
+	},
+	{
+	    "name" :   "43º DP - Cidade Ademar",
+		"Latitude": -23.6567851,
+		"Longitude": -46.6712456
+	},
+	{
+	    "name" :   "47º DP - Capão Redondo",
+		"Latitude": -23.6647541,
+		"Longitude": -46.7850516
+	},
+	{
+	    "name" :   "48º DP - Cidade Dutra",
+		"Latitude": -23.7120212,
+		"Longitude": -46.6979821
+	},
+	{
+	    "name" :   "55º DP - Parque São Rafael",
+		"Latitude": -23.6235823,
+		"Longitude": -46.4725703
+	},
+	{
+	    "name" :   "80º DP - Vila Joaniza",
+		"Latitude": -23.6737026,
+		"Longitude": -46.6620016
+	},
+	{
+	    "name" :   "83º DP - Parque Bristol",
+		"Latitude": -23.6565533,
+		"Longitude": -46.6159998
+	},
+	{
+	    "name" :   "85º DP - Jardim Mirna",
+		"Latitude": -23.7706215,
+		"Longitude": -46.6992721
+	},
+	{
+	    "name" :   "89º DP – Portal do Morumbi",
+		"Latitude": -23.6084084,
+		"Longitude": -46.738228
+	},
+	{
+	    "name" :   "92º DP - Parque Santo Antonio",
+		"Latitude": -23.6628518,
+		"Longitude": -46.758428
+	},
+	{
+	    "name" :   "95º DP – Cohab Heliópolis",
+		"Latitude": -23.6038083,
+		"Longitude": -46.597179
+	},
+	{
+	    "name" :   "96º DP - Brooklin",
+		"Latitude": -23.6044058,
+		"Longitude": -46.6951233
+	},
+	{
+	    "name" :   "97º DP - Americanópolis",
+		"Latitude": -23.6536219,
+		"Longitude": -46.635436
+	},
+	{
+	    "name" :   "98º DP - Jardim Miriam",
+		"Latitude": -23.6851638,
+		"Longitude": -46.6396558
+	},
+	{
+	    "name" :   "99º DP - Campo Grande",
+		"Latitude": -23.6623062,
+		"Longitude": -46.6891084
+	},
+	{
+	    "name" :   "100º DP - Jardim Herculano",
+		"Latitude": -23.6930359,
+		"Longitude": -46.761924
+	},
+	{
+	    "name" :   "101º DP - Jardim Das Imbuias",
+		"Latitude": -23.7297981,
+		"Longitude": -46.7116176
+	},
+	{
+	    "name" :   "102º DP - Socorro",
+		"Latitude": -23.675735,
+		"Longitude": -46.7144865
+	},
+	{
+	    "name" :   "8º DP - Brás",
+		"Latitude": -23.5483289,
+		"Longitude": -46.5959841
+	},
+	{
+	    "name" :   "10º DP - Penha De França",
+		"Latitude": -23.5289099,
+		"Longitude": -46.5569472
+	},
+	{
+	    "name" :   "18º DP - Alto Da Mooca",
+		"Latitude": -23.5696908,
+		"Longitude": -46.594258
+	},
+	{
+	    "name" :   "21º DP - Vila Matilde",
+		"Latitude": -23.5369279,
+		"Longitude": -46.5288511
+	},
+	{
+	    "name" :   "22º DP - São Miguel Paulista",
+		"Latitude": -23.4963069,
+		"Longitude": -46.443409
+	},
+	{
+	    "name" :   "24º DP – Ponte Rasa",
+		"Latitude": -23.5099229,
+		"Longitude": -46.4999727
+	},
+	{
+	    "name" :   "29º DP - Vila Diva",
+		"Latitude": -23.5736771,
+		"Longitude": -46.559842
+	},
+	{
+	    "name" :   "30º DP - Tatuapé",
+		"Latitude": -23.5500639,
+		"Longitude": -46.5699062
+	},
+	{
+	    "name" :   "31º DP - Vila Carrão",
+		"Latitude": -23.549104,
+		"Longitude": -46.5393519
+	},
+	{
+	    "name" :   "32º DP - Itaquera",
+		"Latitude": -23.53418,
+		"Longitude": -46.4538414
+	},
+	{
+	    "name" :   "41º DP - Vila Rica",
+		"Latitude": -23.579318,
+		"Longitude": -46.5198395
+	},
+	{
+	    "name" :   "42º DP - Parque São Lucas",
+		"Latitude": -23.5898128,
+		"Longitude": -46.5553969
+	},
+	{
+	    "name" :   "44º DP - Guaianazes",
+		"Latitude": -23.5422945,
+		"Longitude": -46.4210999
+	},
+	{
+	    "name" :   "49º DP - São Mateus",
+		"Latitude": -23.6058507,
+		"Longitude": -46.4729276
+	},
+	{
+	    "name" :   "50º DP - Itaim Paulista",
+		"Latitude": -23.505089,
+		"Longitude": -46.3990265
+	},
+	{
+	    "name" :   "52º DP - Parque São Jorge",
+		"Latitude": -23.5361804,
+		"Longitude": -46.5656526
+	},
+	{
+	    "name" :   "53º DP - Parque Do Carmo",
+		"Latitude": -23.5662931,
+		"Longitude": -46.4690266
+	},
+	{
+	    "name" :   "54º DP - Cidade Tiradentes",
+		"Latitude": -23.6060709,
+		"Longitude": -46.4033762
+	},
+	{
+	    "name" :   "56º DP - Vila Alpina",
+		"Latitude": -23.593785,
+		"Longitude": -46.5693321
+	},
+	{
+	    "name" :   "57º DP - Parque Da Mooca",
+		"Latitude": -23.5686975,
+		"Longitude": -46.5867669
+	},
+	{
+	    "name" :   "58º DP - Vila Formosa",
+		"Latitude": -23.5624093,
+		"Longitude": -46.5473818
+	},
+	{
+	    "name" :   "59º DP - Jardim Noêmia",
+		"Latitude": -23.4874719,
+		"Longitude": -46.4123492
+	},
+	{
+	    "name" :   "62º DP – Ermelino Matarazzo",
+		"Latitude": -23.489601,
+		"Longitude": -46.4840206
+	},
+	{
+	    "name" :   "63º DP - Vila Jacuí",
+		"Latitude": -23.5095511,
+		"Longitude": -46.4467021
+	},
+	{
+	    "name" :   "64º DP - Cidade A. E. Carvalho",
+		"Latitude": -23.5238845,
+		"Longitude": -46.4754348
+	},
+	{
+	    "name" :   "65º DP - Artur Alvim",
+		"Latitude": -23.544005,
+		"Longitude": -46.4833572
+	},
+	{
+	    "name" :   "66º DP - Jardim Aricanduva",
+		"Latitude": -23.5539385,
+		"Longitude": -46.4944372
+	},
+	{
+	    "name" :   "67º DP - Jardim Robru",
+		"Latitude": -23.520281,
+		"Longitude": -46.413343
+	},
+	{
+	    "name" :   "68º DP - Lageado",
+		"Latitude": -23.5359591,
+		"Longitude": -46.4004242
+	},
+	{
+	    "name" :   "69º DP - Teotônio Vilela",
+		"Latitude": -23.6082544,
+		"Longitude": -46.5030831
+	},
+	{
+	    "name" :   "70º DP - Sapopemba",
+		"Latitude": -23.5998539,
+		"Longitude": -46.5365366
+	},
+	{
+	    "name" :   "81º DP - Belém",
+		"Latitude": -23.5353879,
+		"Longitude": -46.5867261
+	},
+	{
+	    "name" :   "103º DP - Cohab II - Itaquera",
+		"Latitude": -23.551972,
+		"Longitude": -46.4390094
+	},
+	{
+	    "name" :   "7º DP - Lapa",
+		"Latitude": -23.5293732,
+		"Longitude": -46.697329
+	},
+	{
+	    "name" :   "14º DP - Pinheiros",
+		"Latitude": -23.5618494,
+		"Longitude": -46.6935115
+	},
+	{
+	    "name" :   "15º DP – Itaim Bibi",
+		"Latitude": -23.5816831,
+		"Longitude": -46.6765812
+	},
+	{
+	    "name" :   "23º DP - Perdizes",
+		"Latitude": -23.5369411,
+		"Longitude": -46.6675517
+	},
+	{
+	    "name" :   "51º DP - Butantã",
+		"Latitude": -23.5718206,
+		"Longitude": -46.724736
+	},
+	{
+	    "name" :   "75º DP - Jardim Arpoador",
+		"Latitude": -23.5972981,
+		"Longitude": -46.7981726
+	},
+	{
+	    "name" :   "78º DP - Jardins",
+		"Latitude": -23.5661229,
+		"Longitude": -46.6715079
+	},
+	{
+	    "name" :   "91º DP - CEAGESP",
+		"Latitude": -23.5387792,
+		"Longitude": -46.7332029
+	},
+	{
+	    "name" :   "93º DP - Jaguaré",
+		"Latitude": -23.5587444,
+		"Longitude": -46.7489632
+	}
+]
