@@ -1,0 +1,104 @@
+/*********** Barra Global 100% ***************/
+#barrasp_global {
+	width: 100%;
+	background: #fff url(../img/barra/barrasp_media.gif) no-repeat center top;
+	text-align: center; 
+	font-family: Arial, Helvetica, sans-serif;
+}
+    #barrasp_global a {
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-size: 11px;
+	    font-weight: normal;
+	    background-color: transparent;
+	    text-align: left;
+    }
+
+    #barrasp_global *  {
+        margin: 0;
+        padding: 0;
+    }
+
+/********** Barra de Navegação 760px ***********/
+#barrasp_nav {
+	width: 960px;
+	height: 48px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+    /***** Listas ******/
+    #barrasp_nav ul {
+	    float: left;
+	    margin-top: 5px;
+	    margin-left: 2px;
+	    width: auto;
+	    border: none;
+    }
+
+    #barrasp_nav ul li { 
+	    list-style: none;
+	    float: left;
+    }
+
+    #barrasp_nav ul li a {
+	    font-size: 11px;
+	    color: #666;
+	    text-decoration: none;
+	    display: block;
+	    float: left;
+	    padding: 10px 10px;
+	    border: none;
+	    border-right: 1px solid #DDD;
+    }
+
+    #barrasp_nav ul li a:hover {
+	    background-color: #eee;
+    }
+
+    /****** Formulario *****/
+    #barrasp_nav form {
+	    float: left;
+	    width: 200px;
+	    margin: 10px 0 0 46px;
+    }
+
+    #barrasp_nav form label {
+    /*	font-size: 10px;
+	    color: #999;*/
+	    display: none;
+    }
+
+    #barrasp_nav form fieldset {
+	    border: none;
+    }
+
+    #barrasp_nav form fieldset select {
+	    background-color: #FFF;
+	    font: 11px Arial, Verdana, Helvetica, sans-serif;
+	    color: #666;
+	    width: 160px;
+	    margin-right: 5px;
+	    border: 1px solid #999;
+    }
+
+    #barrasp_nav form fieldset input.inputSubmit {
+	    margin-bottom: -1px;
+	    padding: 1px;
+	    font-size: 9px;
+	    color: #333;
+    }
+
+/********** Logotipo********/
+h1#barrasp_logo {
+	width: 150px;
+	height: 45px;
+	background: transparent url(../img/barra/logosp.png) no-repeat;
+	float: right;
+	text-indent: -5000px;
+	display: block;
+}
+    h1#barrasp_logo a {
+	    display: block;
+	    width: 150px;
+	    height: 45px;
+    }

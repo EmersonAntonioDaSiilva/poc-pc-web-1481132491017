@@ -1,0 +1,109 @@
+//Coloca mascara para o campo
+//campo - id do campo
+//tipo_mascara - tipo da mascara a ser aplicada (cpf, data, ano, idade);
+function mascara(campo, tipo_mascara) {
+    var mascara = "";
+    switch (tipo_mascara) {
+        case "cpf":
+            mascara = "999.999.999-99";
+            break;
+        case "data":
+            mascara = "99/99/9999";
+            break;
+        case "ano":
+            mascara = "9999";
+            break;
+        case "renavam":
+            mascara = "99999999999";
+            break;
+        case "float":
+            mascara = "9,99";
+            break;
+        case "cnpj":
+            mascara = "99.999.999/9999-99";
+            break;
+        case "telefone":
+            mascara = "(99)99999999?9";
+            break;
+        case "cep":
+            mascara = "99999-999";
+            break;
+        case "nroBEO":
+            mascara = "?9999999";
+            break;
+        case "placa":
+            mascara = "aaa-9999";
+            break;
+        case "rgd":
+            mascara = "99.999.999-*";
+            break;
+        case "rg":
+            mascara = "99.999.999";
+            break;
+        case "rgn":
+            mascara = "99999999";
+            break;
+        case "uf":
+            mascara = "aa";
+            break;
+        case "hora":
+            mascara = "99:99";
+            break;
+        case "sexo":
+            mascara = "a";
+            break;
+        case "imei":
+            mascara = "999999-99-999999-9";
+            break;   
+    }
+
+    $(campo).mask(mascara,
+        { placeholder: " " }
+    );
+}
+
+function retornarTipo(tipo) {
+    switch (tipo) {
+        default:
+            return "";
+        case "cpf":
+            return "999.999.999-99";
+        case "data":
+            return "99/99/9999";
+        case "ano":
+            return "9999";
+        case "renavam":
+            return "99999999999";
+        case "float":
+            return "9,99";
+        case "cnpj":
+            return "99.999.999/9999-99";
+        case "telefone":
+            return "(99)99999999?9";
+        case "cep":
+            return "99999-999";
+        case "nroBEO":
+            return "?9999999";
+        case "placa":
+            return "aaa-9999";
+        case "rgd":
+            return "99.999.999-*";
+        case "rg":
+            return "99.999.999";
+        case "rgn":
+            return "9?9999999";
+        case "uf":
+            return "aa";
+        case "hora":
+            return "99:99";
+        case "sexo":
+            return "a";
+        case "imei":
+            return "999999-99-999999-9";
+    }
+}
+
+function mascarar(campo, tipo, opcoes) {
+    var mascara = retornarTipo(tipo);
+    $(campo).mask(mascara, opcoes);
+}
