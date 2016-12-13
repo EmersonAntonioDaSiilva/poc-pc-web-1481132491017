@@ -491,7 +491,9 @@ function __doPostBack(eventTarget, eventArgument) {
 	<script src="resources/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="resources/js/command.js"></script>
 	<script type="text/javascript" src="resources/js/main.js"></script>
-	<script type="text/javascript">	
+	<script type="text/javascript">
+		var strContext="000";
+		
 		$(document)
 				.ready(
 						function() {
@@ -541,7 +543,7 @@ function __doPostBack(eventTarget, eventArgument) {
 														.ajax(
 																{
 																	type : 'GET',
-																	url : 'chatManager/json/' + name,
+																	url : 'chatManager/json/' + name + '/' + strContext,
 																	contentType : 'application/json',
 																	dataType : 'json',
 																	data : JSON.stringify(name),
@@ -570,6 +572,7 @@ function __doPostBack(eventTarget, eventArgument) {
 																				+ ' </div> ';
 																				
 																				
+																		strContext = data.strContext;
 																		if("mapa-pc" == data.intencao){
 																			chatresult.innerHTML += ' <div class="row msg_container base_sent">'
 																				+ '	<div class="col-md-2 col-xs-2 avatar"> '

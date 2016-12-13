@@ -42,7 +42,7 @@ public class Speech2TextManager {
 
 	@OnMessage
 	public String message(String message) {
-		return "{\"result\":\"" + conversation.createHelloMessage(message) + "\"}";
+		return "{\"result\":\"" + conversation.createHelloMessage(message, null) + "\"}";
 	}
 
 	@OnMessage
