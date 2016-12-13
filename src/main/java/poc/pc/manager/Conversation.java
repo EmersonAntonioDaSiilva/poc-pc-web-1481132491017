@@ -42,11 +42,23 @@ public class Conversation {
 
 		String string = "";
 		if (!response.getText().isEmpty() && response.getText().size() > 0) {
-			string = response.getText().get(0);
+			string = formJson(response);
 		} else {
 			string = "Não encontrei a resposta adequada";
 		}
 
 		return string;
+	}
+
+	private String formJson(MessageResponse response) {
+		StringBuffer retorno = new StringBuffer();
+
+		retorno.append("{\"");
+		retorno.append("result\":\"" + response.getText().get(0) + "\",");
+		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
+
+		retorno.append("\"}");
+
+		return retorno.toString();
 	}
 }

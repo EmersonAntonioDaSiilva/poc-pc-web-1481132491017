@@ -23,7 +23,7 @@ public class ChatManager {
 	@Path("/json/{dialog}")
 	@Produces("application/json")
 	public String getDialog(@PathParam("dialog") String dialog) {
-		return "{\"result\":\"" + conversation.createHelloMessage(dialog) + "\"}";
+		return conversation.createHelloMessage(dialog);
 	}
 
 }

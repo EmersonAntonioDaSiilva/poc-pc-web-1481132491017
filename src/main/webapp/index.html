@@ -2,18 +2,14 @@
 <!-- saved from url=(0029)http://www.ssp.sp.gov.br/nbo/ -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Secretaria de Estado da Segurança Pública - Governo do Estado de São Paulo</title>
-<meta http-equiv="x-ua-compatible" content="IE=8">
-<link rel="Stylesheet" title="padrao" type="text/css" href="./images/960.css">
-<link rel="Stylesheet" title="padrao" type="text/css" href="./images/DE.css">
-<link rel="stylesheet" title="padrao" type="text/css" href="./images/barrasp_media.css" media="all">
-
-	<!-- THICKBOX -->
-<link rel="stylesheet" type="text/css" href="./images/thickbox.css" media="all">
-
-<link href="resources/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
+<meta http-equiv="x-ua-compatible" content="IE=8" />
+<link rel="Stylesheet" title="padrao" type="text/css" href="./images/960.css" />
+<link rel="Stylesheet" title="padrao" type="text/css" href="./images/DE.css" />
+<link rel="stylesheet" title="padrao" type="text/css" href="./images/barrasp_media.css" media="all" />
+<link rel="stylesheet" type="text/css" href="./images/thickbox.css" media="all" />
+<link href="resources/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
 
 <script type="text/javascript" src="./images/jsDE.js.download"></script>
 <script type="text/javascript" src="./images/thickbox.js.download"></script>
@@ -28,107 +24,110 @@
             mascara($(".placa"), "placa");
         });
     </script>
-
 <script type="text/javascript" src="./images/ScriptsReduzidos.js.download"></script>
-<link rel="stylesheet" title="padrao" type="text/css" href="./images/jquery.ui.dialog.css" media="all">
-
 <style>
-.chat-window{
-    bottom:0;
-    position:fixed;
-    float:right;
-    left:78%;
+.chat-window {
+	bottom: 0;
+	position: fixed;
+	float: right;
+	left: 70%;
 }
 
-.icon_minim{
-    padding:2px 10px;
+.icon_minim {
+	padding: 2px 10px;
 }
 
-.col-md-2, .col-md-10{
-    padding:0;
+.col-md-2, .col-md-10 {
+	padding: 0;
 }
-.msg_container_base{
-  background: #e5e5e5;
-  margin: 0;
-  padding: 0 10px 0;
-  max-height:300px;
-  overflow-x:hidden;
+
+.msg_container_base {
+	background: #e5e5e5;
+	margin: 0;
+	padding: 0 10px 0;
+	max-height: 400px;
+	overflow-x: hidden;
 }
 
 .top-bar {
-  background: #666;
-  color: white;
-  padding: 10px;
-  position: relative;
-  overflow: hidden;
+	background: #666;
+	color: white;
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
 }
 
-.msg_receive{
-    padding-left:0;
-    margin-left:0;
+.msg_receive {
+	padding-left: 0;
+	margin-left: 0;
 }
-.msg_sent{
-    padding-bottom:10px !important;
-    margin-right:0;
+
+.msg_sent {
+	padding-bottom: 15px !important;
+	margin-right: 0;
 }
+
 .messages {
-  background: white;
-  padding: 10px;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  max-width:100%;
+	background: white;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
 }
-.messages > p {
-    font-size: 13px;
-    margin: 0 0 0.2rem 0;
-  }
-.messages > time {
-    font-size: 11px;
-    color: #ccc;
+
+.messages>p {
+	font-size: 13px;
+	margin: 0 0 0.2rem 0;
 }
+
+.messages>time {
+	font-size: 11px;
+	color: #ccc;
+}
+
 .msg_container {
-    padding: 10px;
-    overflow: hidden;
-    display: flex;
+	padding: 10px;
+	overflow: hidden;
+	display: flex;
 }
 
 .avatar {
-    position: relative;
+	position: relative;
 }
 
-.base_receive > .avatar:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border: 5px solid #FFF;
-    border-left-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
+.base_receive>.avatar:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border: 5px solid #FFF;
+	border-left-color: rgba(0, 0, 0, 0);
+	border-bottom-color: rgba(0, 0, 0, 0);
 }
 
 .base_sent {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.base_sent > .avatar:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: 5px solid white;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    box-shadow: 1px 1px 2px rgba(black, 0.2); // not quite perfect but close
+	justify-content: flex-end;
+	align-items: flex-end;
 }
 
-.msg_sent > time{
-    float: right;
+.base_sent>.avatar:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 5px solid white;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	box-shadow: 1px 1px 2px rgba(black, 0.2);
 }
 
+.msg_sent>time {
+	float: right;
+}
 </style>
 
 <script type="text/javascript">
@@ -145,9 +144,9 @@
                     modal: true
                 });
             });
-        }
-    </script>
-<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+        };
+</script>
+<style id="style-1-cropbar-clipper">
 .en-markup-crop-options {
 	top: 18px !important;
 	left: 50% !important;
@@ -167,8 +166,8 @@
 	<form>
 		<div class="aspNetHidden">
 			<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="repBotao$ctl00$Btn"> <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value=""> <input
-				type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value=""> <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
-				value="/wEPDwUJMjUxNjA0ODE1D2QWAgIFD2QWBAIBD2QWAgICDxBkZBYBZmQCBw8WAh4LXyFJdGVtQ291bnQCCBYQZg9kFgICAQ9kFgICAQ8PFgIeD0NvbW1hbmRBcmd1bWVudAUEMTc5OGQWBGYPDxYEHghJbWFnZVVybAUaaW1nL2ljby9pY29fYm9fdmVpY3Vsby5wbmceB1Zpc2libGVnZGQCAQ8PFgIeBFRleHQFF1JvdWJvL0Z1cnRvIGRlIFZlw61jdWxvZGQCAQ9kFgICAQ9kFgICAQ8PFgIfAQUEMTc5OWQWBGYPDxYEHwIFGmltZy9pY28vaWNvX2JvX29iamV0b3MucG5nHwNnZGQCAQ8PFgQfBAUcUm91Ym8vRnVydG8vUGVyZGEgZGUgT2JqL0RvYx4HVG9vbFRpcAVIUm91Ym8sIEZ1cnRvIG91IFBlcmRhIGRlIE9iamV0b3MgKERvY3VtZW50b3MsIENlbHVsYXJlcywgUGxhY2FzLCBldGMuLi4pZGQCAg9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwMGQWBGYPDxYEHwIFEmltZy9pY28vYW1lYWNhLnBuZx8DZ2RkAgEPDxYCHwQFB0FtZWHDp2FkZAIDD2QWAgIBD2QWAgIBDw8WAh8BBQQxODAxZBYEZg8PFgQfAgUVaW1nL2ljby9kaWZhbWFjYW8ucG5nHwNnZGQCAQ8PFgIfBAUdSW5qw7pyaWEvQ2Fsw7puaWEvRGlmYW1hw6fDo29kZAIED2QWAgIBD2QWAgIBDw8WAh8BBQQxODAyZBYEZg8PFgQfAgUUaW1nL2ljby9hY2lkZW50ZS5wbmcfA2dkZAIBDw8WAh8EBR9BY2lkZW50ZSBkZSBUcsOibnMuIFNlbSBWw610aW1hZGQCBQ9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwM2QWBGYPDxYEHwIFImltZy9pY28vaWNvX2JvX2Rlc2FwYXJlY2ltZW50by5wbmcfA2dkZAIBDw8WAh8EBRlEZXNhcGFyZWNpbWVudG8gZGUgcGVzc29hZGQCBg9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwNGQWBGYPDxYEHwIFG2ltZy9pY28vaWNvX2JvX2VuY29udHJvLnBuZx8DZ2RkAgEPDxYCHwQFEkVuY29udHJvIGRlIFBlc3NvYWRkAgcPZBYCAgEPZBYCAgEPDxYCHwEFBDE4MzJkFgRmDw8WBB8CBR5pbWcvaWNvL2ljb19ib19jb21wbGVtZW50by5wbmcfA2dkZAIBDw8WAh8EBRZDb21wbGVtZW50byBkZSBCb2xldGltZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFEEhlYWRlcjEkaW1nQnVzY2E=">
+					type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value=""> <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+						value="/wEPDwUJMjUxNjA0ODE1D2QWAgIFD2QWBAIBD2QWAgICDxBkZBYBZmQCBw8WAh4LXyFJdGVtQ291bnQCCBYQZg9kFgICAQ9kFgICAQ8PFgIeD0NvbW1hbmRBcmd1bWVudAUEMTc5OGQWBGYPDxYEHghJbWFnZVVybAUaaW1nL2ljby9pY29fYm9fdmVpY3Vsby5wbmceB1Zpc2libGVnZGQCAQ8PFgIeBFRleHQFF1JvdWJvL0Z1cnRvIGRlIFZlw61jdWxvZGQCAQ9kFgICAQ9kFgICAQ8PFgIfAQUEMTc5OWQWBGYPDxYEHwIFGmltZy9pY28vaWNvX2JvX29iamV0b3MucG5nHwNnZGQCAQ8PFgQfBAUcUm91Ym8vRnVydG8vUGVyZGEgZGUgT2JqL0RvYx4HVG9vbFRpcAVIUm91Ym8sIEZ1cnRvIG91IFBlcmRhIGRlIE9iamV0b3MgKERvY3VtZW50b3MsIENlbHVsYXJlcywgUGxhY2FzLCBldGMuLi4pZGQCAg9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwMGQWBGYPDxYEHwIFEmltZy9pY28vYW1lYWNhLnBuZx8DZ2RkAgEPDxYCHwQFB0FtZWHDp2FkZAIDD2QWAgIBD2QWAgIBDw8WAh8BBQQxODAxZBYEZg8PFgQfAgUVaW1nL2ljby9kaWZhbWFjYW8ucG5nHwNnZGQCAQ8PFgIfBAUdSW5qw7pyaWEvQ2Fsw7puaWEvRGlmYW1hw6fDo29kZAIED2QWAgIBD2QWAgIBDw8WAh8BBQQxODAyZBYEZg8PFgQfAgUUaW1nL2ljby9hY2lkZW50ZS5wbmcfA2dkZAIBDw8WAh8EBR9BY2lkZW50ZSBkZSBUcsOibnMuIFNlbSBWw610aW1hZGQCBQ9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwM2QWBGYPDxYEHwIFImltZy9pY28vaWNvX2JvX2Rlc2FwYXJlY2ltZW50by5wbmcfA2dkZAIBDw8WAh8EBRlEZXNhcGFyZWNpbWVudG8gZGUgcGVzc29hZGQCBg9kFgICAQ9kFgICAQ8PFgIfAQUEMTgwNGQWBGYPDxYEHwIFG2ltZy9pY28vaWNvX2JvX2VuY29udHJvLnBuZx8DZ2RkAgEPDxYCHwQFEkVuY29udHJvIGRlIFBlc3NvYWRkAgcPZBYCAgEPZBYCAgEPDxYCHwEFBDE4MzJkFgRmDw8WBB8CBR5pbWcvaWNvL2ljb19ib19jb21wbGVtZW50by5wbmcfA2dkZAIBDw8WAh8EBRZDb21wbGVtZW50byBkZSBCb2xldGltZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFEEhlYWRlcjEkaW1nQnVzY2E=">
 		</div>
 
 		<script type="text/javascript">
@@ -186,7 +185,6 @@ function __doPostBack(eventTarget, eventArgument) {
 }
 //]]>
 </script>
-
 		<div class="container_12">
 			<div class="clear"></div>
 
@@ -203,16 +201,13 @@ function __doPostBack(eventTarget, eventArgument) {
 				</ul>
 			</div>
 			<div class="Redes">
-				<a href="http://www.facebook.com/segurancapublicasp" target="_blank"> <img src="./images/icon_face.png" alt="FACEBOOK SSP">
-				</a>
+				<a href="http://www.facebook.com/segurancapublicasp" target="_blank"> <img src="./images/icon_face.png" alt="FACEBOOK SSP"></a>
 			</div>
 			<div class="Redes">
-				<a href="https://twitter.com/#!/SegurancaSP" target="_blank"> <img src="./images/icon_twit.png" alt="TWITTER SSP">
-				</a>
+				<a href="https://twitter.com/#!/SegurancaSP" target="_blank"> <img src="./images/icon_twit.png" alt="TWITTER SSP"></a>
 			</div>
 			<div class="Redes">
-				<a href="https://plus.google.com/u/0/101257925088133147645/posts" target="_blank"> <img src="./images/icon_google.png" alt="GOOGLE+ SSP">
-				</a>
+				<a href="https://plus.google.com/u/0/101257925088133147645/posts" target="_blank"> <img src="./images/icon_google.png" alt="GOOGLE+ SSP"></a>
 			</div>
 			<div class="clear"></div>
 
@@ -280,51 +275,51 @@ function __doPostBack(eventTarget, eventArgument) {
 
 			<div class="grid_2 alpha">
 				<img alt="Pergunta Frequentes" src="./images/perguntas_frequentes.png" border="0" class="peg_img">
-				<div class="grid_2 alpha omega peg_box">
-					<div class="grid_2 alpha omega peg_titulos">
-						<p class="lateral_titulo">Delegacia Eletrônica</p>
+					<div class="grid_2 alpha omega peg_box">
+						<div class="grid_2 alpha omega peg_titulos">
+							<p class="lateral_titulo">Delegacia Eletrônica</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_branco">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Que tipo de ocorrência eu posso registrar pela Delegacia Eletrônica? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_azul">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Posso registrar um roubo pela Delegacia Eletrônica? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_branco">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> O valor do Boletim Eletrônico de Ocorrência é o mesmo do Boletim de Ocorrência registrado em uma delegacia? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_azul">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Não possuo e-mail, ainda assim, posso registrar uma ocorrência pela internet? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_branco">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> O valor do Boletim Eletrônico de Ocorrência é o mesmo do Boletim de Ocorrência registrado em uma delegacia? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_azul">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Não consigo acessar a resposta em meu e-mail, o que posso fazer? </a>
+							</p>
+						</div>
+						<div class="grid_2 alpha omega peg_item item_branco">
+							<p>
+								<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Qual o tempo de espera para receber a resposta à solicitação de Boletim Eletrônico de Ocorrência? </a>
+							</p>
+						</div>
 					</div>
-					<div class="grid_2 alpha omega peg_item item_branco">
+					<div class="grid_2 alpha omega peg_rodape">
 						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Que tipo de ocorrência eu posso registrar pela Delegacia Eletrônica? </a>
+							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Veja mais » </a>
 						</p>
 					</div>
-					<div class="grid_2 alpha omega peg_item item_azul">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Posso registrar um roubo pela Delegacia Eletrônica? </a>
-						</p>
-					</div>
-					<div class="grid_2 alpha omega peg_item item_branco">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> O valor do Boletim Eletrônico de Ocorrência é o mesmo do Boletim de Ocorrência registrado em uma delegacia? </a>
-						</p>
-					</div>
-					<div class="grid_2 alpha omega peg_item item_azul">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Não possuo e-mail, ainda assim, posso registrar uma ocorrência pela internet? </a>
-						</p>
-					</div>
-					<div class="grid_2 alpha omega peg_item item_branco">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> O valor do Boletim Eletrônico de Ocorrência é o mesmo do Boletim de Ocorrência registrado em uma delegacia? </a>
-						</p>
-					</div>
-					<div class="grid_2 alpha omega peg_item item_azul">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Não consigo acessar a resposta em meu e-mail, o que posso fazer? </a>
-						</p>
-					</div>
-					<div class="grid_2 alpha omega peg_item item_branco">
-						<p>
-							<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Qual o tempo de espera para receber a resposta à solicitação de Boletim Eletrônico de Ocorrência? </a>
-						</p>
-					</div>
-				</div>
-				<div class="grid_2 alpha omega peg_rodape">
-					<p>
-						<a href="http://www.ssp.sp.gov.br/fale/del_eletronica/answers.aspx?t=1"> Veja mais » </a>
-					</p>
-				</div>
 			</div>
 			<div class=" grid_6">
 				<h1>
@@ -362,20 +357,20 @@ function __doPostBack(eventTarget, eventArgument) {
 				</div>
 				<div class="grid_6 alpha omega info">
 					<p>
-						<img src="./images/ico_message_right.png" class="info_img" alt="Aviso"> Esclarecemos que este serviço está disponível apenas para o registro de fatos ocorridos no Estado de São Paulo.
+						<img src="./images/ico_message_right.png" class="info_img" alt="Aviso"> Esclarecemos que este serviço está disponível apenas para o registro de fatos ocorridos no Estado de São Paulo. 
 					</p>
 				</div>
 				<div class="grid_6 alpha omega info">
 					<p>
 						<img src="./images/ico_message_warning.png" class="info_img" alt="Alerta"> A Delegacia Eletrônica adverte que <b>falsidade ideológica</b> e <b>falsa comunicação de crime</b> também
-						configuram crimes, conforme previsão no artigo 299 e 340, respectivamente, do Código Penal Brasileiro. O usuário poderá receber a visita de policiais civis, devidamente identificados, para
-						entrevista pessoal sobre o delito notificado.
+							configuram crimes, conforme previsão no artigo 299 e 340, respectivamente, do Código Penal Brasileiro. O usuário poderá receber a visita de policiais civis, devidamente identificados, para
+							entrevista pessoal sobre o delito notificado. 
 					</p>
 				</div>
 				<div class="grid_6 alpha omega info">
 					<p>
 						<img src="./images/ico_message_warning.png" class="info_img" alt="Alerta"> <b>ATENÇÃO: A Delegacia Eletrônica não envia e-mails para cumprimento de intimações, nem para pedir
-							atualização dos seus dados cadastrais.<br> Caso receba alguma mensagem com esse teor, não acesse nenhum link, marque o remetente como SPAM e apague o e-mail de sua caixa.
+								atualização dos seus dados cadastrais.<br> Caso receba alguma mensagem com esse teor, não acesse nenhum link, marque o remetente como SPAM e apague o e-mail de sua caixa. 
 						</b>
 					</p>
 				</div>
@@ -386,70 +381,68 @@ function __doPostBack(eventTarget, eventArgument) {
 				<div id="repBotao_pnBotao_0" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_0" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl00$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_0" src="./images/ico_bo_veiculo.png"><span
-						id="repBotao_Lb_0">Roubo/Furto de Veículo</span></a>
+							id="repBotao_Lb_0">Roubo/Furto de Veículo</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_1" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_1" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl01$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_1" src="./images/ico_bo_objetos.png"><span
-						id="repBotao_Lb_1" title="Roubo, Furto ou Perda de Objetos (Documentos, Celulares, Placas, etc...)">Roubo/Furto/Perda de Obj/Doc</span></a>
+							id="repBotao_Lb_1" title="Roubo, Furto ou Perda de Objetos (Documentos, Celulares, Placas, etc...)">Roubo/Furto/Perda de Obj/Doc</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_2" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_2" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl02$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_2" src="./images/ameaca.png"><span
-						id="repBotao_Lb_2">Ameaça</span></a>
+							id="repBotao_Lb_2">Ameaça</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_3" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_3" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl03$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_3" src="./images/difamacao.png"><span
-						id="repBotao_Lb_3">Injúria/Calúnia/Difamação</span></a>
+							id="repBotao_Lb_3">Injúria/Calúnia/Difamação</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_4" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_4" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl04$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_4" src="./images/acidente.png"><span
-						id="repBotao_Lb_4">Acidente de Trâns. Sem Vítima</span></a>
+							id="repBotao_Lb_4">Acidente de Trâns. Sem Vítima</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_5" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_5" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl05$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_5" src="./images/ico_bo_desaparecimento.png"><span
-						id="repBotao_Lb_5">Desaparecimento de pessoa</span></a>
+							id="repBotao_Lb_5">Desaparecimento de pessoa</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_6" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_6" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl06$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_6" src="./images/ico_bo_encontro.png"><span
-						id="repBotao_Lb_6">Encontro de Pessoa</span></a>
+							id="repBotao_Lb_6">Encontro de Pessoa</span></a>
 
 				</div>
 
 				<div id="repBotao_pnBotao_7" class="grid_4 omega alpha">
 
 					<a id="repBotao_Btn_7" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;repBotao$ctl07$Btn&#39;,&#39;&#39;)"><img id="repBotao_Img_7" src="./images/ico_bo_complemento.png"><span
-						id="repBotao_Lb_7">Complemento de Boletim</span></a>
+							id="repBotao_Lb_7">Complemento de Boletim</span></a>
 
 				</div>
 
 				<div id="pnBotaoAco" class="grid_4 omega alpha">
 
-					<a id="BtnAco" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;BtnAco&#39;,&#39;&#39;)"> <img src="./images/ico_bo_acompanhamento.png" alt="Alerta">Acompanhamento
-					</a>
+					<a id="BtnAco" class="grid_4 btn_inicio" href="javascript:__doPostBack(&#39;BtnAco&#39;,&#39;&#39;)"> <img src="./images/ico_bo_acompanhamento.png" alt="Alerta">Acompanhamento </a>
 
 				</div>
 				<div id="pnDEPA" class="grid_4 omega alpha">
 
 					<a href="http://www.ssp.sp.gov.br/depa/" class="grid_4 btn_inicio"> <img src="./images/icone_pata.png" alt="DEPA" style="margin: 10px 14px 10px 5px; width: 29px; height: 27px;"><span>DEPA
-							- Proteção Animal</span>
-					</a>
+								- Proteção Animal</span></a>
 
 				</div>
 			</div>
@@ -460,14 +453,13 @@ function __doPostBack(eventTarget, eventArgument) {
 
 			<div class="grid_12 alpha omega newfooter">
 				<p>
-					Secretaria de Estado da Segurança Pública - Rua Libero Badaró, 39, Centro, SP - CEP: 01009-000 <br>
-					<a class="linkemail" href="mailto:seguranca@sp.gov.br">seguranca@sp.gov.br</a>
+					Secretaria de Estado da Segurança Pública - Rua Libero Badaró, 39, Centro, SP - CEP: 01009-000 <br> <a class="linkemail" href="mailto:seguranca@sp.gov.br">seguranca@sp.gov.br</a>
 				</p>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1"">
+			<div class="row chat-window col-xs-5 col-md-4" id="chat_window_1"">
 				<div class="col-xs-12 col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading top-bar">
@@ -483,8 +475,8 @@ function __doPostBack(eventTarget, eventArgument) {
 						<div class="panel-body msg_container_base" id="result"></div>
 						<div class="panel-footer">
 							<div class="input-group">
-								<input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." /> <span class="input-group-btn">
-									<button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+								<input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..."  /> <span class="input-group-btn">
+									<button type="button" class="btn btn-primary btn-sm" id="btn-chat">Send</button>
 								</span>
 							</div>
 						</div>
@@ -494,11 +486,12 @@ function __doPostBack(eventTarget, eventArgument) {
 		</div>
 	</form>
 
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyAIzJRyC7E8gDpzfyaQIFOW_bxvpDnP7lM"></script>
 	<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
 	<script src="resources/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="resources/js/command.js"></script>
 	<script type="text/javascript" src="resources/js/main.js"></script>
-	<script type="text/javascript">
+	<script type="text/javascript">	
 		$(document)
 				.ready(
 						function() {
@@ -575,6 +568,22 @@ function __doPostBack(eventTarget, eventArgument) {
 																				+ '	  	</div> '
 																				+ '	</div> '
 																				+ ' </div> ';
+																				
+																				
+																		if("mapa-pc" == data.intencao){
+																			chatresult.innerHTML += ' <div class="row msg_container base_sent">'
+																				+ '	<div class="col-md-2 col-xs-2 avatar"> '
+																				+ '		<img src="resources/img/Watson.gif" class=" img-responsive "> '
+																				+ '	</div> '
+																				+ '	<div class="col-md-10 col-xs-10">'
+																				+ '		<div class="messages msg_sent">'
+																				+ ' 		<div id="mapholder"></div>'
+																				+ '	  	</div> '
+																				+ '	</div> '
+																				+ ' </div> ';
+
+																			getLocation();
+																		}
 																	}
 																}).error(
 																function() {
@@ -582,7 +591,72 @@ function __doPostBack(eventTarget, eventArgument) {
 																});
 											});
 						}); // (document).ready
-	</script>
+						
+						function getLocation() {
+							if (navigator.geolocation) {
+								navigator.geolocation.getCurrentPosition(showPosition, showError);
+							} else {
+								alert("Geolocalização não é suportada nesse browser.");
+							}
+						}
+
+						function showPosition(position) {
+							lat = position.coords.latitude;
+							lon = position.coords.longitude;
+							latlon = new google.maps.LatLng(lat, lon)
+							mapholder = document.getElementById('mapholder')
+							
+							mapholder.style.height = '200px';
+							mapholder.style.width = '250px';
+
+							var myOptions = {
+								center : latlon,
+								zoom : 12,
+								mapTypeId : google.maps.MapTypeId.ROADMAP,
+								mapTypeControl : false,
+								navigationControlOptions : {
+									style : google.maps.NavigationControlStyle.SMALL
+								}
+							};
+							var map = new google.maps.Map(mapholder, myOptions);
+							var marker = new google.maps.Marker({
+								position : latlon,
+								map : map,
+								title : "Você está Aqui!",
+								icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+							});
+							
+						    $.getJSON("./resources/json/pontosDP.json", function(pontos) {
+						        $.each(pontos, function(index, ponto) {
+						            var marker = new google.maps.Marker({
+						                position: new google.maps.LatLng(ponto.Latitude, ponto.Longitude),
+						                title: ponto.name,
+						                map: map
+						            });
+						 
+						        });
+						 
+						    });
+
+						}
+
+						function showError(error) {
+							switch (error.code) {
+							case error.PERMISSION_DENIED:
+								x.innerHTML = "Usuário rejeitou a solicitação de Geolocalização."
+								break;
+							case error.POSITION_UNAVAILABLE:
+								x.innerHTML = "Localização indisponível."
+								break;
+							case error.TIMEOUT:
+								x.innerHTML = "O tempo da requisição expirou."
+								break;
+							case error.UNKNOWN_ERROR:
+								x.innerHTML = "Algum erro desconhecido aconteceu."
+								break;
+							}
+						}
+		</script>
 </body>
 
 </html>
