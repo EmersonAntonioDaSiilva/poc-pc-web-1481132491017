@@ -55,6 +55,8 @@ public class Conversation {
 
 		retorno.append("{\"");
 		retorno.append("result\":\"" + response.getText().get(0) + "\",");
+		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence() + "\",");
+		retorno.append("\"idConversation\":\"" + response.getContext().get("conversation_id") + "\",");
 		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
 
 		retorno.append("\"}");
