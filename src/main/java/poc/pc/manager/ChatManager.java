@@ -43,13 +43,17 @@ public class ChatManager {
 	private String formJson(MessageResponse response) {
 		StringBuffer retorno = new StringBuffer();
 
+		String acao = (String) (response.getOutput().containsKey("acao") == true ? response.getOutput().get("acao") : "");
+
 		retorno.append("{\"");
 		retorno.append("result\":\"" + response.getText().get(0) + "\",");
 		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence() + "\",");
 		retorno.append("\"strContext\":\"" + response.getContext() + "\",");
+		retorno.append("\"acao\":\"" + acao + "\",");
 		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
-
 		retorno.append("\"}");
+
+		System.out.println(response);
 
 		return retorno.toString();
 	}
