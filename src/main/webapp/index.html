@@ -539,7 +539,8 @@ function __doPostBack(eventTarget, eventArgument) {
 					+ '		<img src="resources/img/Avatar-1.jpg" class=" img-responsive "> '
 					+ '	</div> '
 					+ ' </div> ';
-
+					chatresult.scrollTop = chatresult.scrollHeight;
+					
 			$.ajax({
 				type : 'GET',
 				url : 'chatManager/json/' + name + '/' + strContext,
@@ -566,7 +567,7 @@ function __doPostBack(eventTarget, eventArgument) {
 							+ '	</div> '
 							+ ' </div> ';
 							
-							
+					chatresult.scrollTop = chatresult.scrollHeight;
 					strContext = data.strContext;
 					if("mapa" == data.acao){
 						chatresult.innerHTML += ' <div class="row msg_container base_sent">'
@@ -595,6 +596,7 @@ function __doPostBack(eventTarget, eventArgument) {
 							+ ' </div> ';
 
 					}
+					chatresult.scrollTop = chatresult.scrollHeight;
 				}
 			}).error(function() {});							
 		}
