@@ -539,7 +539,7 @@ function __doPostBack(eventTarget, eventArgument) {
 					+ '		<img src="resources/img/Avatar-1.jpg" class=" img-responsive "> '
 					+ '	</div> '
 					+ ' </div> ';
-					chatresult.scrollTop = chatresult.scrollHeight;
+			chatresult.scrollTop = chatresult.scrollHeight;
 					
 			$.ajax({
 				type : 'GET',
@@ -577,6 +577,9 @@ function __doPostBack(eventTarget, eventArgument) {
 							+ '	<div class="col-md-10 col-xs-10">'
 							+ '		<div class="messages msg_sent">'
 							+ ' 		<div id="mapholder"></div>'
+							+ '	  		<time datetime="2009-11-13T20:00">'
+							+ timeNow
+							+ '			</time>'
 							+ '	  	</div> '
 							+ '	</div> '
 							+ ' </div> ';
@@ -591,6 +594,9 @@ function __doPostBack(eventTarget, eventArgument) {
 							+ '	<div class="col-md-10 col-xs-10">'
 							+ '		<div class="messages msg_sent">'
 							+ ' 		<a href="http://www.ssp.sp.gov.br/nbo/Default.aspx" target="_blank">Delegacia Eletrônica</a> '
+							+ '	  		<time datetime="2009-11-13T20:00">'
+							+ timeNow
+							+ '			</time>'
 							+ '	  	</div> '
 							+ '	</div> '
 							+ ' </div> ';
