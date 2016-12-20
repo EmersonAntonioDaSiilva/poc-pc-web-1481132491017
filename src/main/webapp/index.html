@@ -509,10 +509,10 @@ function __doPostBack(eventTarget, eventArgument) {
 		
  		var tela_width = $(document).width();
  		var div_width = div.width();
-		var left = (tela_width - div_width);
-
+		var left = (tela_width - div_width) - 70;
+		div.style.position = 'absolute';
+		
 		div.style.left = left;
-
 
 		function conversation(event) {
 			event.preventDefault();
