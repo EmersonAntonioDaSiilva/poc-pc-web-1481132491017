@@ -1,559 +1,466 @@
 [
 	{
 		"name" :   "1º DP - Sé",
-		"end" : "R. da Glória, 410 - Liberdade, São Paulo - SP, 01510-001",
 		"Latitude": -23.5569628,
 		"Longitude": -46.6343408
 	},
 	{
 	    "name" :   "2º DP - Bom Retiro",
-		"end" : "R. Jaraguá, 383 - Bom Retiro, São Paulo - SP, 01129-000",
 		"Latitude": -23.5232008,
 		"Longitude": -46.6443684
 	},
 	{
 	    "name" :   "3º DP - Santa Efigênia",
-		"end" : "R. Aurora, 322 - República, São Paulo - SP, 01209-000",
 		"Latitude": -23.5394499,
 		"Longitude": -46.6396335
 	},
 	{
 	    "name" :   "4º DP - Consolação",
-		"end" : "R. Marquês de Paranaguá, 246 - Consolação, São Paulo - SP, 01303-050",
 		"Latitude": -23.5505977,
 		"Longitude": -46.6498873
 	},
 	{
 	    "name" :   "5º DP - Aclimação",
-		"end" : "R. Prof. Antônio Prudente, 160 - Liberdade, São Paulo - SP, 01504-000",
 		"Latitude": -23.5655047,
 		"Longitude": -46.6380865
 	},
 	{
 	    "name" :   "6º DP - Cambuci (Atrás do Hospital Cruz Azul)",
-		"end" : "R. Hermínio Lemos, 70 - Cambuci, São Paulo - SP, 01540-050",
 		"Latitude": -23.5676202,
 		"Longitude": -46.6237268
 	},
 	{
 	    "name" :   "12º DP - Pari",
-		"end" : "R. Rio Bonito, 950 - Pari, São Paulo - SP, 03023-000",
 		"Latitude": -23.5298608,
 		"Longitude": -46.6124474
 	},
 	{
 	    "name" :   "77º DP - Santa Cecília",
-		"end" : "Alameda Glete, 827 - Santa Cecilia, São Paulo - SP, 01215-001",
 		"Latitude": -23.5367598,
 		"Longitude": -46.6483582
 	},
 	{
 	    "name" :   "9º DP - Carandiru",
-	    "end" : "Rua dos Camarés, 94A - Carandiru, São Paulo - SP, 02068-030",
-		"Latitude":	 -23.5032441
+		"Latitude":	-23.5032441,
 		"Longitude": -46.6129232
 	},
 	{
 	    "name" :   "13º DP - Casa Verde",
-	    "end" : "Av. Casa Verde, 677 - Casa Verde, São Paulo - SP, 02520-000",
 		"Latitude": -23.5004539,
 		"Longitude": -46.6492117
 	},
 	{
 	    "name" :   "19º DP - Vila Maria",
-	    "end" : "R. Amambaí, 1181 - Vila Maria, São Paulo - SP, 02115-001",
 		"Latitude": -23.517843,
 		"Longitude": -46.5848652
 	},
 	{
 	    "name" :   "20º DP - Água Fria",
-	    "end" : "R. São Zeferino, 34 - Jardim Franca, São Paulo - SP, 02338-070",
 		"Latitude": -23.4779655,
 		"Longitude": -46.6205459
 	},
 	{
 	    "name" :   "28º DP - Freguesia Do Ó",
-	    "end" : "Av. Itaberaba, 731 - Freguesia do Ó, São Paulo - SP, 02733-100",
 		"Latitude": -23.494724,
 		"Longitude": -46.697865
 	},
 	{
 	    "name" :   "33º DP - Pirituba",
-	    "end" : "R. Joaquim Oliveira Freitas, 1170 - Vila Mangalot, São Paulo - SP, 05133-002",
 		"Latitude": -23.4973232,
 		"Longitude": -46.7457932
 	},
 	{
 	    "name" :   "38º DP - Vila Amália",
-	    "end" : "Av. Parada Pinto - Vila Nova Cachoeirinha, São Paulo - SP",
 		"Latitude": -23.4696402,
 		"Longitude": -46.6482844
 	},
 	{
 	    "name" :   "39º DP - Vila Gustavo",
-	    "end" : "R. da Esperança, 797 - Vila Gustavo, São Paulo - SP",
 		"Latitude": -23.4833831,
 		"Longitude": -46.5899152
 	},
 	{
 	    "name" :   "40º DP - Vila Santa Maria",
-	    "end" : "Av. Dep. Emílio Carlos, 1251 - Limão, São Paulo - SP, 02721-000",
 		"Latitude": -23.494313,
 		"Longitude": -46.6779309
 	},
 	{
 	    "name" :   "45º DP - Vila Brasilândia",
-	    "end" : "Rua Joaquim Ferreira de Oliveira, 403 - Água Branca, São Paulo - SP, 02844-080",
 		"Latitude": -23.4691728,
 		"Longitude": -46.6897364
 	},
 	{
 	    "name" :   "46º DP - Perus",
-	    "end" : "Av. Comendador Fiorelli Peccicacco, 312 - Vila Fanton, São Paulo - SP, 05201-050",
 		"Latitude": -23.4044006,
 		"Longitude": -46.7380392
 	},
 	{
 	    "name" :   "72º DP - Vila Penteado",
-	    "end" : "R. Silvio Bueno Peruche, 500 - Vila Penteado, São Paulo - SP, 05083-010",
 		"Latitude": -23.4635218,
 		"Longitude": -46.6788482
 	},
 	{
 	    "name" :   "73º DP - Jaçanã",
-	    "end" : "Av. Paulo Lincoln do Valle Pontin, 744 - Jaçanã, São Paulo - SP, 02273-011",
 		"Latitude": -23.4586306,
 		"Longitude": -46.5852411
 	},
 	{
 	    "name" :   "74º DP - Jaraguá",
-	    "end" : "Av. Elísio Teixeira Leite, 7461 - Sítio Morro Grande, São Paulo - SP, 02801-000",
 		"Latitude": -23.4457366,
 		"Longitude": -46.7168598
 	},
 	{
 	    "name" :   "87º DP - Vila Pereira Barreto",
-	    "end" : "Av. Menotti Laudísio, 286 - Jardim Cidade Pirituba, São Paulo - SP, 02945-000",
 		"Latitude": -23.4819928,
 		"Longitude": -46.7252233
 	},
 	{
 	    "name" :   "90º DP - Parque Novo Mundo",
-	    "end" : "Alameda 1º Sargento Osmar Cortez Claro, 52 - Vila Sabrina, São Paulo - SP, 02145-045",
 		"Latitude": -23.5010355,
 		"Longitude": -46.5697945
 	},
 	{
 	    "name" :   "11º DP - Santo Amaro",
-	    "end" : "R. Padre José de Anchieta, 138 - Santo Amaro, São Paulo - SP, 04742-001",
 		"Latitude": -23.6468868,
 		"Longitude": -46.7074536
 	},
 	{
 	    "name" :   "16º DP - Vila Clementino",
-		"end" : "Av. Onze de Junho, 89 - Vila Clementino, São Paulo - SP, 04041-050",
 		"Latitude": -23.6017882,
 		"Longitude": -46.6377661
 	},
 	{
 	    "name" :   "17º DP - Ipiranga",
-		"end" : "Rua Dom Luís Lasanha, 534 - Ipiranga, São Paulo - SP, 04266-030",
-		"Latitude": --23.5905868,
+		"Latitude": -23.5905868,
 		"Longitude": -46.6087861
 	},
 	{
 	    "name" :   "25º DP – Parelheiros",
-		"end" : "R. Humberto Ravelo, 9 - Chácara São Silvestre, São Paulo - SP, 04888-010",
 		"Latitude": -23.8260383,
 		"Longitude": -46.7355448
 	},
 	{
 	    "name" :   "26º DP - Sacomã",
-		"end" : "Av. Padre Arlindo Vieira, 50 - Vila Vermelha, São Paulo - SP",
 		"Latitude": -23.6227807,
 		"Longitude": -46.6021564
 	},
 	{
 	    "name" :   "27º DP - Campo Belo",
-		"end" : "R. Demóstenes, 407 - Campo Belo, São Paulo - SP, 04614-011",
 		"Latitude": -23.6152646,
 		"Longitude": -46.6749929
 	},
 	{
 	    "name" :   "34º DP – Vila Sônia/ Morumbi",
-		"end" : "Av. Prof. Francisco Morato, 2971 - Vila Sonia, São Paulo - SP, 03178-200",
 		"Latitude": -23.5880807,
 		"Longitude": -46.7268396
 	},
 	{
 	    "name" :   "35º DP - Jabaquara",
-		"end" : "Av. Eng. George Corbisier, 322 - Jabaquara, São Paulo - SP, 04345-000",
 		"Latitude": -23.639544,
 		"Longitude": -46.6432063
 	},
 	{
 	    "name" :   "36º DP - Vila Mariana",
-		"end" : "R. Tutóia, 921 - Vila Mariana, São Paulo - SP, 04007-005",
 		"Latitude": -23.5792323,
 		"Longitude": -46.6508929
 	},
 	{
 	    "name" :   "37º DP - Campo Limpo",
-		"end" : "R. Jacaratinga, 201 - Vila Pirajussara, São Paulo - SP, 05786-120",
 		"Latitude": -23.6324305,
 		"Longitude": -46.7704442
 	},
 	{
 	    "name" :   "43º DP - Cidade Ademar",
-		"end" : "Rua Antônio Gil, 1349 - Cidade Ademar, São Paulo - SP, 04655-002",
 		"Latitude": -23.6567851,
 		"Longitude": -46.6690569
 	},
 	{
 	    "name" :   "47º DP - Capão Redondo",
-		"end" : "Estr. de Itapecerica, 5864 - Jardim Amalia, São Paulo - SP, 05858-000",
 		"Latitude": -23.6647541,
 		"Longitude": -46.7828629
 	},
 	{
 	    "name" :   "48º DP - Cidade Dutra",
-		"end" : "R. Aníbal dos Anjos Carvalho, 87 - Vila Santa Maria, São Paulo - SP, 04810-050",
 		"Latitude": -23.7121611,
 		"Longitude": -46.6957382
 	},
 	{
 	    "name" :   "55º DP - Parque São Rafael",
-		"end" : "R. Aldeia de Santo Inácio, 696 - Parque Sao Rafael, São Paulo - SP",
 		"Latitude": -23.6235823,
 		"Longitude": -46.4703816
 	},
 	{
 	    "name" :   "80º DP - Vila Joaniza",
-		"end" : "R. Leonel da Gama Beles, S/N - Vila Joaniza, São Paulo - SP, 04404-160",
 		"Latitude": -23.6737026,
 		"Longitude": -46.6598129
 	},
 	{
 	    "name" :   "83º DP - Parque Bristol",
-		"end" : "Rua Ângelo Bertini, 82 - Parque Bristol, São Paulo - SP, 04195-090",
 		"Latitude": -23.6565533,
 		"Longitude": -46.6138111
 	},
 	{
 	    "name" :   "85º DP - Jardim Mirna",
-		"end" : "R. Dr. Juvenal Hudson Ferreira, 141 - Jardim Mirna - Jardim Myrna, São Paulo - SP, 04856-140",
 		"Latitude": -23.7706215,
 		"Longitude": -46.6970834
 	},
 	{
 	    "name" :   "89º DP – Portal do Morumbi",
-		"end" : "R. Domingos Simões, 21 - Vila Andrade, São Paulo - SP, 05630-010",
 		"Latitude": -23.6084084,
 		"Longitude": -46.7360393
 	},
 	{
 	    "name" :   "92º DP - Parque Santo Antonio",
-		"end" : "R. Maria Benedita Rodrigues, 300 - Parque Santo Antonio, São Paulo - SP, 05851-280",
 		"Latitude": -23.6628518,
 		"Longitude": -46.7562393
 	},
 	{
 	    "name" :   "95º DP – Cohab Heliópolis",
-		"end" : "Ipiranga, São Paulo - SP, 04218-000",
 		"Latitude": -23.6038083,
 		"Longitude": -46.5949903
 	},
 	{
 	    "name" :   "96º DP - Brooklin",
-		"end" : "Av. Engenheiro Luís Carlos Berrini, 900 - Cidade Monções, São Paulo - SP, 04571-010",
 		"Latitude": -23.6044058,
 		"Longitude": -46.6929346
 	},
 	{
 	    "name" :   "97º DP - Americanópolis",
-		"end" : "Rod. dos Imigrantes Km 11.5, s/n - Americanópolis, São Paulo - SP, 04329-100",
 		"Latitude": -23.6536219,
 		"Longitude": -46.6332473
 	},
 	{
 	    "name" :   "98º DP - Jardim Miriam",
-		"end" : "Av. Ângelo Cristianini, 467 - Jardim Miriam, São Paulo - SP, 04424-010",
 		"Latitude": -23.6851638,
 		"Longitude": -46.6374671
 	},
 	{
 	    "name" :   "99º DP - Campo Grande",
-		"end" : "Rua Sargento Manuel Barbosa da Silva, 115 - Jardim Taquaral, São Paulo - SP, 04675-050",
 		"Latitude": -23.6623062,
 		"Longitude": -46.6869197
 	},
 	{
 	    "name" :   "100º DP - Jardim Herculano",
-		"end" : "Jardim Herculano, São Paulo - SP, 04920-000",
 		"Latitude": -23.6930359,
 		"Longitude": -46.7597353
 	},
 	{
 	    "name" :   "101º DP - Jardim Das Imbuias",
-		"end" : "R. Carolina Michaelis, 370 - Jardim das Imbuias, São Paulo - SP, 04829-170",
 		"Latitude": -23.7297981,
 		"Longitude": -46.7094289
 	},
 	{
 	    "name" :   "102º DP - Socorro",
-		"end" : "Av. Atlântica, 1171 - Socorro, São Paulo - SP, 04768-200",
 		"Latitude": -23.675735,
 		"Longitude": -46.7122978
 	},
 	{
 	    "name" :   "8º DP - Brás",
-		"end" : "R. Sapucaia, 206 - Brás, São Paulo - SP, 03170-050",
 		"Latitude": -23.5483289,
 		"Longitude": -46.5937954
 	},
 	{
 	    "name" :   "10º DP - Penha De França",
-		"end" : "Av. Airton Pretini, 69 - Jardim America da Penha, São Paulo - SP, 03090-000",
 		"Latitude": -23.5289099,
 		"Longitude": -46.5547585
 	},
 	{
 	    "name" :   "18º DP - Alto Da Mooca",
-		"end" : "Rua Juventus, 350 - Parque da Mooca, São Paulo - SP, 03124-020",
 		"Latitude": -23.5703925,
 		"Longitude": -46.5915033
 	},
 	{
 	    "name" :   "21º DP - Vila Matilde",
-		"end" : "Av. Marcondes de Brito, 1416 - Vila Matilde, São Paulo - SP, 03509-040",
 		"Latitude": -23.5369279,
 		"Longitude": -46.5266624
 	},
 	{
 	    "name" :   "22º DP - São Miguel Paulista",
-		"end" : "R. Américo Gomes da Costa, 305 - São Miguel, São Paulo - SP, 08010-120",
 		"Latitude": -23.4963069,
 		"Longitude": -46.4412203
 	},
 	{
 	    "name" :   "24º DP – Ponte Rasa",
-		"end" : "Jardim Penha, São Paulo - SP, 03755-100",
 		"Latitude": -23.509861,
 		"Longitude": -46.4985854
 	},
 	{
 	    "name" :   "29º DP - Vila Diva",
-		"end" : "Av. Sapopemba, 3259 - Vila Diva, São Paulo - SP, 03372-030",
 		"Latitude": -23.5736771,
 		"Longitude": -46.5576533
 	},
 	{
 	    "name" :   "30º DP - Tatuapé",
-		"end" : "R. Antônio Camardo, 69 - Tatuapé, São Paulo - SP, 03309-060",
 		"Latitude": -23.5500639,
 		"Longitude": -46.5677175
 	},
 	{
 	    "name" :   "31º DP - Vila Carrão",
-		"end" : "Av. Conselheiro Carrão, 2580 - Vila Carrao, São Paulo - SP, 03402-002",
 		"Latitude": -23.549104,
 		"Longitude": -46.5371632
 	},
 	{
 	    "name" :   "32º DP - Itaquera",
-		"end" : "Rua Sábbado D’Angelo, 64 - Itaquera, São Paulo - SP, 08210-790",
 		"Latitude": -23.53418,
 		"Longitude": -46.4516527
 	},
 	{
 	    "name" :   "41º DP - Vila Rica",
-		"end" : "Av. Inconfidência Mineira, 688 - Vila rica, São Paulo - SP, 03904-000",
 		"Latitude": -23.579318,
 		"Longitude": -46.5176508
 	},
 	{
 	    "name" :   "42º DP - Parque São Lucas",
-		"end" : "Av. do Oratório, 1588 - Pq Sao Lucas, São Paulo - SP, 03220-010",
 		"Latitude": -23.5898128,
 		"Longitude": -46.5532082
 	},
 	{
 	    "name" :   "44º DP - Guaianazes",
-		"end" : "Rua Salvador Gianete, 386, R. Salvador Gianetti, 386 - Guaianazes, São Paulo - SP, 08240-500",
 		"Latitude": -23.5422945,
 		"Longitude": -46.4189112
 	},
 	{
 	    "name" :   "49º DP - São Mateus",
-		"end" : "Av. Ragueb Chohfi, 830 - Jardim Três Marias, São Paulo - SP, 08375-000",
 		"Latitude": -23.6058507,
 		"Longitude": -46.4707389
 	},
 	{
 	    "name" :   "50º DP - Itaim Paulista",
-		"end" : "Rua Tibúrcio de Sousa, 860 - Itaim Paulista, São Paulo - SP, 08140-000",
 		"Latitude": -23.505089,
 		"Longitude": -46.3968378
 	},
 	{
 	    "name" :   "52º DP - Parque São Jorge",
-		"end" : "Rua Dr. Coryntho Baldoíno Costa, 900 - Tatuapé, São Paulo - SP, 03069-070",
 		"Latitude": -23.5361804,
 		"Longitude": -46.5634639
 	},
 	{
 	    "name" :   "53º DP - Parque Do Carmo",
-		"end" : "Av. Osvaldo Pucci, 180 - Parque do Carmo, São Paulo - SP, 08270-700",
 		"Latitude": -23.5662931,
 		"Longitude": -46.4668379
 	},
 	{
 	    "name" :   "54º DP - Cidade Tiradentes",
-		"end" : "R. Francisco José Viana, 175 - Iguatemi, São Paulo - SP, 08471-533",
 		"Latitude": -23.6069007,
 		"Longitude": -46.4011703
 	},
 	{
 	    "name" :   "56º DP - Vila Alpina",
-		"end" : "R. Dra. Esmeralda Mendes Policene, 264 - Vila Prudente, São Paulo - SP, 03226-030",
 		"Latitude": -23.593785,
 		"Longitude": -46.5671434
 	},
 	{
 	    "name" :   "57º DP - Parque Da Mooca",
-		"end" : "R. do Oratório, 2220 - Alto da Mooca, São Paulo - SP, 03128-110",
 		"Latitude": -23.5686975,
 		"Longitude": -46.5845782
 	},
 	{
 	    "name" :   "58º DP - Vila Formosa",
-		"end" : "R. Antúrios, 362 - Vila Formosa, São Paulo - SP",
 		"Latitude": -23.5624093,
 		"Longitude": -46.5451931
 	},
 	{
 	    "name" :   "59º DP - Jardim Noêmia",
-		"end" : "R. Vistosa da Me. de Deus, 120 - Jardim Noemia, São Paulo - SP, 08180-110",
 		"Latitude": -23.4874719,
 		"Longitude": -46.4101605
 	},
 	{
 	    "name" :   "62º DP – Ermelino Matarazzo",
-		"end" : "Rua Rui Pirozzelli, 250 - Jardim Belem, São Paulo - SP, 03811-020",
 		"Latitude": -23.489601,
 		"Longitude": -46.4818319
 	},
 	{
 	    "name" :   "63º DP - Vila Jacuí",
-		"end" : "Rua Driades, 95 - Jardim Casa Pintada, São Paulo - SP",
 		"Latitude": -23.5095521,
 		"Longitude": -46.4467139
 	},
 	{
 	    "name" :   "64º DP - Cidade A. E. Carvalho",
-		"end" : "R. Sonho Gaúcho - Jardim Coimbra, São Paulo - SP, 01046-925",
 		"Latitude": -23.5242446,
 		"Longitude": -46.4754897
 	},
 	{
 	    "name" :   "65º DP - Artur Alvim",
-		"end" : "Av. Padre Estanislau de Campos, 750 - Artur Alvim, São Paulo - SP, 03590-010",
 		"Latitude": -23.544005,
 		"Longitude": -46.4811685
 	},
 	{
 	    "name" :   "66º DP - Jardim Aricanduva",
-		"end" : "Av. Osvaldo Valle Cordeiro, 190 - Cidade Líder, São Paulo - SP, 03584-010",
 		"Latitude": -23.5539385,
 		"Longitude": -46.4922485
 	},
 	{
 	    "name" :   "67º DP - Jardim Robru",
-		"end" : "Rua Severino José Fernandes, 1900 - Jardim Robru, São Paulo - SP, 03178-200",
 		"Latitude": -23.52022,
 		"Longitude": -46.4115326
 	},
 	{
 	    "name" :   "68º DP - Lageado",
-		"end" : "R. João da Silva Águiar, 229 - Lageado, São Paulo - SP, 08452-180",
 		"Latitude": -23.5359591,
 		"Longitude": -46.3982355
 	},
 	{
 	    "name" :   "69º DP - Teotônio Vilela",
-		"end" : "Av. Arquiteto Vilanova Artigas, 720 - Teotonio Vilela, São Caetano do Sul - SP, 09540-202",
 		"Latitude": -23.6082544,
 		"Longitude": -46.5008944
 	},
 	{
 	    "name" :   "70º DP - Sapopemba",
-		"end" : "R. Otávio Alves Dundas, 424 - Vila Ivg, São Paulo - SP",
 		"Latitude": -23.5985861,
 		"Longitude": -46.5336159
 	},
 	{
 	    "name" :   "81º DP - Belém",
-		"end" : "Av. Celso Garcia, 2875 - Belenzinho, São Paulo - SP, 03061-040",
 		"Latitude": -23.5353879,
 		"Longitude": -46.5845374
 	},
 	{
 	    "name" :   "103º DP - Cohab II - Itaquera",
-		"end" : "Avenida Nagib Farah Maluf, 209 - Conjunto, São Paulo - SP, 08255-000",
 		"Latitude": -23.551972,
 		"Longitude": -46.4368207
 	},
 	{
 	    "name" :   "7º DP - Lapa",
-		"end" : "R. Camilo, 317 - Lapa, São Paulo - SP, 05045-020",
 		"Latitude": -23.5293732,
 		"Longitude": -46.6951403
 	},
 	{
 	    "name" :   "14º DP - Pinheiros",
-		"end" : "R. Dep. Lacerda Franco, 372 - Pinheiros, São Paulo - SP, 05418-001",
 		"Latitude": -23.5618494,
 		"Longitude": -46.6913228
 	},
 	{
 	    "name" :   "15º DP – Itaim Bibi",
-		"end" : "R. Dr. Renato Paes de Barros, 340 - Itaim Bibi, São Paulo - SP, 04530-000",
 		"Latitude": -23.5818477,
 		"Longitude": -46.6745046
 	},
 	{
 	    "name" :   "23º DP - Perdizes",
-		"end" : "R. Itapicuru, 80 - Perdizes, São Paulo - SP, 05006-000",
 		"Latitude": -23.5369411,
 		"Longitude": -46.665363
 	},
 	{
 	    "name" :   "51º DP - Butantã",
-		"end" : "R. Barroso Neto, 46 - Vila Indiana, São Paulo - SP, 05585-010",
 		"Latitude": -23.5718206,
 		"Longitude": -46.7225473
 	},
 	{
 	    "name" :   "75º DP - Jardim Arpoador",
-		"end" : "Rua Mário Ancona, 530 - Parque Ipe, São Paulo - SP, 05572-100",
 		"Latitude": -23.5972981,
 		"Longitude": -46.7959839
 	},
 	{
 	    "name" :   "78º DP - Jardins",
-		"end" : "R. Estados Unidos, 1608 - Jardim America, São Paulo - SP, 01427-002",
 		"Latitude": -23.5661229,
 		"Longitude": -46.6693192
 	},
 	{
 	    "name" :   "91º DP - CEAGESP",
-		"end" : "Vila Leopoldina, São Paulo - SP, 05317-000",
 		"Latitude": -23.5387792,
 		"Longitude": -46.7310142
 	},
 	{
 	    "name" :   "93º DP - Jaguaré",
-		"end" : "Av. Corifeu de Azevedo Marques, 4300 - Vila Lageado, São Paulo - SP, 05339-002",
 		"Latitude": -23.5587444,
 		"Longitude": -46.7467745
 	}
