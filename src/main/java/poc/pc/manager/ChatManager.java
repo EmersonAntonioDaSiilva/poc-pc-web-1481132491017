@@ -21,16 +21,24 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
  * @author bsutter@redhat.com
  */
 
-@Path("/")
+@Path("/policia-civil")
 public class ChatManager {
 
 	@Inject
 	private Conversation conversation;
 
+	private static String workspaceId = "acfc6b01-ee0a-4614-ad94-858a33807290";
+	private static String username = "377ab19c-3ab6-4f2a-af10-2e461e77d7c2";
+	private static String password = "XKjXU2vqxM0d";
+
 	@GET
 	@Path("/json/{dialog}/{strContext}")
 	@Produces("application/json")
 	public String getDialog(@PathParam("dialog") String dialog, @PathParam("strContext") String strContext) {
+		conversation.setWorkspaceId(workspaceId);
+		conversation.setUsername(username);
+		conversation.setPassword(password);
+
 		Map<String, Object> context = null;
 
 		if ("000".equals(strContext)) {

@@ -27,15 +27,18 @@ public class Conversation {
 	private ConversationService service;
 	private MessageRequest newMessage;
 
-	private String workspaceId = "acfc6b01-ee0a-4614-ad94-858a33807290";
+	private String workspaceId;
+	private String username;
+	private String password;
 
 	public Conversation() {
 		service = new ConversationService(ConversationService.VERSION_DATE_2016_07_11);
-		service.setUsernameAndPassword("377ab19c-3ab6-4f2a-af10-2e461e77d7c2", "XKjXU2vqxM0d");
 
 	}
 
 	public MessageResponse createHelloMessage(String name, Map<String, Object> context) {
+		service.setUsernameAndPassword(username, password);
+
 		return formatTxtWatson(name, context);
 	}
 
@@ -46,5 +49,17 @@ public class Conversation {
 		System.out.println(response);
 
 		return response;
+	}
+
+	public void setWorkspaceId(String workspaceId) {
+		this.workspaceId = workspaceId;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }
