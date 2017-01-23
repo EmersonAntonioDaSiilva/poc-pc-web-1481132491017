@@ -16,8 +16,10 @@
  */
 package poc.pc.manager;
 
+import java.util.HashMap;
 import java.util.Map;
 
+import com.google.gson.JsonSyntaxException;
 import com.ibm.watson.developer_cloud.conversation.v1.ConversationService;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
@@ -36,19 +38,33 @@ public class Conversation {
 
 	}
 
-	public MessageResponse createHelloMessage(String name, Map<String, Object> context) {
+	public MessageResponse createHelloMessage(String name, String context) {
 		service.setUsernameAndPassword(username, password);
 
 		return formatTxtWatson(name, context);
 	}
 
-	private MessageResponse formatTxtWatson(String texto, Map<String, Object> context) {
-		newMessage = new MessageRequest.Builder().inputText(texto).context(context).build();
+	private MessageResponse formatTxtWatson(String texto, String context) {
+		newMessage = new MessageRequest.Builder().inputText(texto).context(convertJsonfromMap(context)).build();
 		MessageResponse response = service.message(workspaceId, newMessage).execute();
 
 		System.out.println(response);
 
 		return response;
+	}
+
+	private Map<String, Object> convertJsonfromMap(String strContext) {
+		Map<String, Object> context = null;
+		try {
+			if (strContext != null) {
+				context = new HashMap<>();
+				context.put("conversation_id", strContext);
+			}
+
+		} catch (JsonSyntaxException e) {
+			e.printStackTrace();
+		}
+		return context;
 	}
 
 	public void setWorkspaceId(String workspaceId) {
