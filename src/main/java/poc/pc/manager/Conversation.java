@@ -19,6 +19,8 @@ package poc.pc.manager;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
 import com.ibm.watson.developer_cloud.conversation.v1.ConversationService;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
@@ -27,38 +29,46 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 public class Conversation {
 
 	private ConversationService service;
-	private MessageRequest newMessage;
 
 	private String workspaceId;
 	private String username;
 	private String password;
+	
+	private static final String EMPTY = "";
 
 	public Conversation() {
-		service = new ConversationService(ConversationService.VERSION_DATE_2016_07_11);
-
+		service = new ConversationService(ConversationService.VERSION_DATE_2016_09_20);
+		service.setApiKey(EMPTY);
 	}
 
-	public MessageResponse createHelloMessage(String name, String context) {
+	public MessageResponse createHelloMessage(String name, String conversation_id, String system) {
 		service.setUsernameAndPassword(username, password);
-
-		return formatTxtWatson(name, context);
+		return formatTxtWatson(name, conversation_id, system);
 	}
 
-	private MessageResponse formatTxtWatson(String texto, String context) {
-		newMessage = new MessageRequest.Builder().inputText(texto).context(convertJsonfromMap(context)).build();
-		MessageResponse response = service.message(workspaceId, newMessage).execute();
+	private MessageResponse formatTxtWatson(String texto, String context, String system) {
+		MessageRequest request  = new MessageRequest.Builder().inputText(texto).alternateIntents(true).context(convertJsonfromMap(context, system)).build();
+		MessageResponse response = service.message(workspaceId, request).execute();
 
 		System.out.println(response);
-
+		System.out.println("===================================================================================");
+		
 		return response;
 	}
 
-	private Map<String, Object> convertJsonfromMap(String strContext) {
+	private Map<String, Object> convertJsonfromMap(String conversation_id, String system) {
 		Map<String, Object> context = null;
 		try {
-			if (strContext != null) {
+			if (conversation_id != null) {
 				context = new HashMap<>();
-				context.put("conversation_id", strContext);
+				context.put("conversation_id", conversation_id);
+
+				JsonParser parser = new JsonParser();
+				Object obj = parser.parse(system);
+
+				JsonObject jsonObject = (JsonObject) obj;
+				
+				context.put("system", jsonObject);
 			}
 
 		} catch (JsonSyntaxException e) {

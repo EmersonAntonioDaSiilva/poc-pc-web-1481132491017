@@ -26,18 +26,19 @@ public class ChatManager {
 	private static String password = "XKjXU2vqxM0d";
 
 	@GET
-	@Path("/json/{dialog}/{strContext}")
+	@Path("/json/{dialog}/{conversation_id}/{system}")
 	@Produces("application/json")
-	public String getDialog(@PathParam("dialog") String dialog, @PathParam("strContext") String strContext) {
+	public String getDialog(@PathParam("dialog") String dialog, @PathParam("conversation_id") String conversation_id, @PathParam("system") String system) {
 		conversation.setWorkspaceId(workspaceId);
 		conversation.setUsername(username);
 		conversation.setPassword(password);
 
-		if ("000".equals(strContext)) {
-			strContext = null;
+		if ("000".equals(conversation_id)) {
+			conversation_id = null;
+			system = null;
 		}
 
-		return formJson(conversation.createHelloMessage(dialog, strContext));
+		return formJson(conversation.createHelloMessage(dialog, conversation_id, system));
 	}
 
 	private String formJson(MessageResponse response) {
@@ -48,7 +49,9 @@ public class ChatManager {
 		retorno.append("{\"");
 		retorno.append("result\":\"" + response.getText().get(0) + "\",");
 		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence() + "\",");
-		retorno.append("\"strContext\":\"" + response.getContext().get("conversation_id") + "\",");
+		retorno.append("\"conversation_id\":\"" + response.getContext().get("conversation_id") + "\",");
+		retorno.append("\"system\":\"" + response.getContext().get("system") + "\",");
+		retorno.append("\"intent\":\"" + response.getIntents().get(0).getIntent() + "\",");
 		retorno.append("\"acao\":\"" + acao + "\",");
 		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
 		retorno.append("\"}");

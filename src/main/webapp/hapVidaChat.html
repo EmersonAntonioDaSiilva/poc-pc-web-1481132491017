@@ -165,7 +165,7 @@
 
 	<form>
 		<div class="container">
-			<div class="row chat-window col-xs-5 col-md-4" id="chat_window_1"">
+			<div class="row chat-window col-xs-5 col-md-4" id="chat_window_1">
 				<div class="col-xs-12 col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading top-bar">
@@ -197,6 +197,7 @@
 	<script type="text/javascript" src="resources/js/main.js"></script>
 	<script type="text/javascript">
 		var conversation_id="000";
+		var system="000";
 
 		$(document).ready(function() {$('#btn-chat').click(function(event) {
 			conversation(event);
@@ -240,14 +241,14 @@
 					+ '	  	</div> '
 					+ '	</div> '
 					+ '	<div class="col-md-2 col-xs-2 avatar"> '
-					+ '		<img src="resources/img/Avatar-1.jpg" class=" img-responsive "> '
+					+ '		<img src="resources/img/Avatar-1.jpg" class=" img-responsive "></img> '
 					+ '	</div> '
 					+ ' </div> ';
 			chatresult.scrollTop = chatresult.scrollHeight;
 					
 			$.ajax({
 				type : 'GET',
-				url : 'chat/hapvida/json/' + name + '/' + conversation_id,
+				url : 'chat/hapvida/json/' + name + '/' + conversation_id + '/' + system,
 				contentType : 'application/json',
 				dataType : 'json',
 				data : JSON.stringify(name),
@@ -257,7 +258,7 @@
 					
 					chatresult.innerHTML += ' <div class="row msg_container base_sent">'
 							+ '	<div class="col-md-2 col-xs-2 avatar"> '
-							+ '		<img src="resources/img/Watson.gif" class=" img-responsive "> '
+							+ '		<img src="resources/img/Watson.gif" class=" img-responsive "> </img> '
 							+ '	</div> '
 							+ '	<div class="col-md-10 col-xs-10">'
 							+ '		<div class="messages msg_sent">'
@@ -273,6 +274,7 @@
 							
 					chatresult.scrollTop = chatresult.scrollHeight;
 					conversation_id = data.conversation_id;
+					system = data.system;
 
 				}
 			}).error(function() {});							
