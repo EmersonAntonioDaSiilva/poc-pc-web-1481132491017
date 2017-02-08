@@ -99,6 +99,8 @@ public class ChatHapVidaManager {
 		//		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
 		retorno.append("\"}");
 
+		
+		System.out.println(retorno);
 		return retorno.toString();
 	}
 
