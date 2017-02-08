@@ -17,7 +17,7 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 
 @Path("/policia-civil")
 public class ChatManager {
-
+	
 	@Inject
 	private Conversation conversation;
 
