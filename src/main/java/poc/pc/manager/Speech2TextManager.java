@@ -40,8 +40,6 @@ public class Speech2TextManager {
 	@OnOpen
 	public void open(Session session, EndpointConfig conf) {
 		sessions.add(session);
-
-		System.out.println("opem connection!!");
 	}
 
 	@OnMessage
@@ -95,7 +93,7 @@ public class Speech2TextManager {
 	 */
 	@OnError
 	public void error(Session session, Throwable error) {
-		System.out.println("error: " + error.getMessage());
+
 	}
 
 	/**
@@ -105,6 +103,5 @@ public class Speech2TextManager {
 	@OnClose
 	public void close(Session session, CloseReason reason) {
 		sessions.remove(session);
-		System.out.println("close: ");
 	}
 }

@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -16,6 +17,7 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 @Path("/hapvida")
 public class ChatHapVidaManager {
 
+	@Inject
 	private Conversation conversation;
 
 	private static String workspaceId = "d6fe397a-343b-47b5-a132-a1def577b235";
@@ -28,8 +30,6 @@ public class ChatHapVidaManager {
 	private Date noite;
 
 	public ChatHapVidaManager() {
-		conversation = new Conversation();
-		
 		try {
 			manha = parser.parse("06:00");
 			tarde = parser.parse("12:00");
@@ -50,7 +50,6 @@ public class ChatHapVidaManager {
 		if ("000".equals(conversation_id)) {
 			conversation_id = null;
 			system = null;
-			dialog = periocoDia(dialog);
 		}
 
 		return formJson(conversation.createHelloMessage(dialog, conversation_id, system));
@@ -99,8 +98,6 @@ public class ChatHapVidaManager {
 		//		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
 		retorno.append("\"}");
 
-		
-		System.out.println(retorno);
 		return retorno.toString();
 	}
 

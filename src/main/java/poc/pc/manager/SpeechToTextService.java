@@ -23,7 +23,7 @@ public class SpeechToTextService {
 
 			@Override
 			public void onTranscription(SpeechResults speechResults) {
-				System.out.println(speechResults);
+
 			}
 		});
 

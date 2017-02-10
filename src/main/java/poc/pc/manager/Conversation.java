@@ -19,6 +19,10 @@ package poc.pc.manager;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
@@ -27,7 +31,9 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 
 public class Conversation {
-
+	 private final Logger systemLog = LoggerFactory.getLogger(Conversation.class);
+	 
+	 
 	private ConversationService service;
 
 	private String workspaceId;
@@ -50,8 +56,14 @@ public class Conversation {
 		MessageRequest request  = new MessageRequest.Builder().inputText(texto).alternateIntents(true).context(convertJsonfromMap(context, system)).build();
 		MessageResponse response = service.message(workspaceId, request).execute();
 
-		System.out.println(response);
-		System.out.println("===================================================================================");
+		BasicConfigurator.configure();
+		systemLog.info( "================================================================================");
+		systemLog.info( "Interlocutor: {}", response.getInputText());
+		systemLog.info("Watson: {}", response.getText().get(0));
+		systemLog.info("conversation_id: {}", response.getContext().get("conversation_id"));
+		systemLog.info("system: {}", response.getContext().get("system"));
+		systemLog.info( "================================================================================");
+		BasicConfigurator.resetConfiguration();
 		
 		return response;
 	}
