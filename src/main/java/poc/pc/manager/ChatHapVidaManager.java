@@ -85,7 +85,7 @@ public class ChatHapVidaManager {
 		//		String acao = (String) (response.getOutput().containsKey("acao") == true ? response.getOutput().get("acao") : "");
 
 		retorno.append("{\"");
-		retorno.append("result\":\"" + response.getText().get(0));
+		retorno.append("result\":\"" + response.getText().get(response.getText().size()-1));
 		retorno.append("\",");
 		//		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence());
 		//		retorno.append("\",");
