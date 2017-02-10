@@ -57,12 +57,11 @@ public class Conversation {
 		MessageResponse response = service.message(workspaceId, request).execute();
 
 		BasicConfigurator.configure();
-		systemLog.info( "================================================================================");
-		systemLog.info( "Interlocutor: {}", response.getInputText());
+		systemLog.info("Interlocutor: {}", response.getInputText());
 		systemLog.info("Watson: {}", response.getText().get(0));
 		systemLog.info("conversation_id: {}", response.getContext().get("conversation_id"));
 		systemLog.info("system: {}", response.getContext().get("system"));
-		systemLog.info( "================================================================================");
+		systemLog.info("================================================================================");
 		BasicConfigurator.resetConfiguration();
 		
 		return response;

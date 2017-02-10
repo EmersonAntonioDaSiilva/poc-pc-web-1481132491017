@@ -81,21 +81,12 @@ public class ChatHapVidaManager {
 
 	private String formJson(MessageResponse response) {
 		StringBuffer retorno = new StringBuffer();
-
-		//		String acao = (String) (response.getOutput().containsKey("acao") == true ? response.getOutput().get("acao") : "");
-
 		retorno.append("{\"");
-		retorno.append("result\":\"" + response.getText().get(response.getText().size()-1));
+		retorno.append("result\":\"" + response.getText().get(0));
 		retorno.append("\",");
-		//		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence());
-		//		retorno.append("\",");
 		retorno.append("\"conversation_id\":\"" + response.getContext().get("conversation_id"));		
 		retorno.append("\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system"));
-		// 		retorno.append("\",");
-		//		retorno.append("\"acao\":\"" + acao);
-		//		retorno.append("\",");
-		//		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
 		retorno.append("\"}");
 
 		return retorno.toString();
