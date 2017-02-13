@@ -61,6 +61,7 @@ public class Conversation {
 		systemLog.info("Watson: {}", response.getText().get(0));
 		systemLog.info("conversation_id: {}", response.getContext().get("conversation_id"));
 		systemLog.info("system: {}", response.getContext().get("system"));
+		//systemLog.info("dadosExtras: {}", response.getContext().get("dadosExtras"));
 		systemLog.info("================================================================================");
 		BasicConfigurator.resetConfiguration();
 		
@@ -71,15 +72,14 @@ public class Conversation {
 		Map<String, Object> context = null;
 		try {
 			if (conversation_id != null) {
+				JsonParser parser = new JsonParser();
+
 				context = new HashMap<>();
 				context.put("conversation_id", conversation_id);
-
-				JsonParser parser = new JsonParser();
-				Object obj = parser.parse(system);
-
-				JsonObject jsonObject = (JsonObject) obj;
 				
-				context.put("system", jsonObject);
+				Object objSystem = parser.parse(system);
+				JsonObject jsonObjectSystem = (JsonObject) objSystem;
+				context.put("system", jsonObjectSystem);
 			}
 
 		} catch (JsonSyntaxException e) {
