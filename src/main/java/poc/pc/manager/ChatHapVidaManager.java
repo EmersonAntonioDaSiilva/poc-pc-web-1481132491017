@@ -57,10 +57,14 @@ public class ChatHapVidaManager {
 		JsonObject jsonObjectSystem = (JsonObject) objSystem;
 		JsonObject JsonObjectNodeOutput = (JsonObject) jsonObjectSystem.get("_node_output_map");
 
+		JsonArray JsonArrayDialog_stack = (JsonArray) jsonObjectSystem.get("dialog_stack");
+		JsonObject JsonObjectDialog = (JsonObject) JsonArrayDialog_stack.get(0);
+		
+		
 		JsonElement jsonStart = JsonObjectNodeOutput.get("start");
 		JsonElement jsonDocumento = JsonObjectNodeOutput.get("Documento");
-
-		if(jsonStart != null && jsonDocumento == null){
+		
+		if(jsonStart != null && jsonDocumento == null && !JsonObjectDialog.get("dialog_node").getAsString().equals("start")){
 			response.getText().remove(0);
 			response.getText().add("OK, Eu entendi, mas poderia me dizer o código da sua carteira, ou o número do CPF do titular?");
 			response.getContext().put("system", "{dialog_stack=[{dialog_node=Documento}], dialog_turn_counter=2.0, dialog_request_counter=2.0, _node_output_map={start=[0.0], Documento=[0.0]}}");
