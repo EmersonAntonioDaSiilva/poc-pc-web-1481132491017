@@ -55,39 +55,12 @@ public class ChatHapVidaManager {
 
 		Object objSystem = parser.parse(response.getContext().get("system").toString());
 		JsonObject jsonObjectSystem = (JsonObject) objSystem;
-		
-		
-		JsonObject JsonObjectDadosExtras = new JsonObject();
-		JsonObjectDadosExtras.addProperty("nome", "empty");
-		JsonObjectDadosExtras.addProperty("cpf", "empty");
-		JsonObjectDadosExtras.addProperty("carteira", "empty");
-		jsonObjectSystem.add("dadosExtras", JsonObjectDadosExtras);
-
 		JsonObject JsonObjectNodeOutput = (JsonObject) jsonObjectSystem.get("_node_output_map");
 
 		JsonElement jsonStart = JsonObjectNodeOutput.get("start");
 		JsonElement jsonDocumento = JsonObjectNodeOutput.get("Documento");
-	
-		
+
 		if(jsonStart != null && jsonDocumento == null){
-			JsonObject jsonObjectDadosExtras = (JsonObject) jsonObjectSystem.get("dadosExtras");
-			
-			if(jsonObjectDadosExtras != null){
-				String cpf = jsonObjectDadosExtras.get("cpf").toString();
-				String carteira = jsonObjectDadosExtras.get("carteira").toString();
-				
-				if((cpf == null && cpf.isEmpty()) || 
-				   (carteira == null && carteira.isEmpty())){
-					response.getText().remove(0);
-					response.getText().add("OK, poderia me dizer o código da sua carteira, ou o número do CPF do titular?");
-					response.getContext().put("system", "{dialog_stack=[{dialog_node=Documento}], dialog_turn_counter=2.0, dialog_request_counter=2.0, _node_output_map={start=[0.0], Documento=[0.0]}}");
-					
-					return response;
-				}
-			}
-		}
-		
-		if(jsonStart == null && jsonDocumento == null){
 			response.getText().remove(0);
 			response.getText().add("OK, Eu entendi, mas poderia me dizer o código da sua carteira, ou o número do CPF do titular?");
 			response.getContext().put("system", "{dialog_stack=[{dialog_node=Documento}], dialog_turn_counter=2.0, dialog_request_counter=2.0, _node_output_map={start=[0.0], Documento=[0.0]}}");
