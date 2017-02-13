@@ -67,9 +67,7 @@ public class ChatHapVidaManager {
 
 		JsonElement jsonStart = JsonObjectNodeOutput.get("start");
 		JsonElement jsonDocumento = JsonObjectNodeOutput.get("Documento");
-		JsonElement jsonConfirmarDados = JsonObjectNodeOutput.get("Confirmar_dados");
-		
-		
+	
 		
 		if(jsonStart != null && jsonDocumento == null){
 			JsonObject jsonObjectDadosExtras = (JsonObject) jsonObjectSystem.get("dadosExtras");
@@ -97,17 +95,6 @@ public class ChatHapVidaManager {
 			return response;
 		}
 
-//		if(jsonStart != null && jsonDocumento != null && jsonConfirmarDados != null){
-//			response.getText().remove(0);
-//			response.getText().add("Confirmando o seus dados: o seu nome é José da Silva, o seu telefone é 011 3605-1423.");
-//			response.getContext().put("system", "{dialog_stack=[{dialog_node=Documento}], dialog_turn_counter=2.0, dialog_request_counter=2.0, _node_output_map={start=[0.0], Documento=[0.0]}}");
-//			
-//			return response;
-//		}
-		
-		
-		
-		
 		return response;
 	}
 
