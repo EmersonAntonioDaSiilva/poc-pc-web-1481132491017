@@ -2,9 +2,11 @@ package poc.pc.manager;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -83,9 +85,27 @@ public class ChatHapVidaManager {
 		retorno.append("\"conversation_id\":\"" + response.getContext().get("conversation_id"));		
 		retorno.append("\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system"));
+		retorno.append("\",");
+		retorno.append("\"audio\":\"" + response.getOutput().get("nodes_visited").toString().toLowerCase());
+		retorno.append("\",");
+		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
 
 		return retorno.toString();
+	}
+
+	private String getAction(MessageResponse response) {
+		List<String> tagsFinais = new ArrayList<>();
+		tagsFinais.add("Agenda_Doutor");
+		tagsFinais.add("Agenda_Doutora");
+		tagsFinais.add("Fim_Agendamento");
+		
+		String returno = "continuar";
+		if(tagsFinais.contains(response.getOutput().get("nodes_visited").toString())){
+			returno = "finalizar";
+		}
+		
+		return returno;
 	}
 
 }
