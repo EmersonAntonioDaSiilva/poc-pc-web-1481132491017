@@ -89,7 +89,7 @@ public class ChatHapVidaManager {
 		retorno.append("\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system"));
 		retorno.append("\",");
-		retorno.append("\"audio\":\"" + JsonObjectDialog.get("dialog_node").toString().toLowerCase());
+		retorno.append("\"audio\":\"" + JsonObjectDialog.get("dialog_node").getAsString().toString().toLowerCase());
 		retorno.append("\",");
 		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
