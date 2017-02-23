@@ -1,11 +1,6 @@
 package poc.pc.manager;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -79,6 +74,14 @@ public class ChatHapVidaManager {
 
 	private String formJson(MessageResponse response) {
 		StringBuffer retorno = new StringBuffer();
+		JsonParser parser = new JsonParser();
+
+		Object objSystem = parser.parse(response.getContext().get("system").toString());
+		JsonObject jsonObjectSystem = (JsonObject) objSystem;
+		JsonArray JsonArrayDialog_stack = (JsonArray) jsonObjectSystem.get("dialog_stack");
+		JsonObject JsonObjectDialog = (JsonObject) JsonArrayDialog_stack.get(0);
+
+		
 		retorno.append("{\"");
 		retorno.append("result\":\"" + response.getText().get(0));
 		retorno.append("\",");
@@ -86,7 +89,7 @@ public class ChatHapVidaManager {
 		retorno.append("\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system"));
 		retorno.append("\",");
-		retorno.append("\"audio\":\"" + response.getOutput().get("nodes_visited").toString().toLowerCase());
+		retorno.append("\"audio\":\"" + JsonObjectDialog.get("dialog_node").toString().toLowerCase());
 		retorno.append("\",");
 		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
