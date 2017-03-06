@@ -56,12 +56,13 @@ public class ChatHapVidaManager {
 
 		JsonArray JsonArrayDialog_stack = (JsonArray) jsonObjectSystem.get("dialog_stack");
 		JsonObject JsonObjectDialog = (JsonObject) JsonArrayDialog_stack.get(0);
-		
-		
+
 		JsonElement jsonStart = JsonObjectNodeOutput.get("start");
 		JsonElement jsonDocumento = JsonObjectNodeOutput.get("Documento");
+		JsonElement jsonTransferir = JsonObjectNodeOutput.get("Transferir");
 		
-		if(jsonStart != null && jsonDocumento == null && !JsonObjectDialog.get("dialog_node").getAsString().equals("start")){
+		
+		if(jsonStart != null && jsonDocumento == null && jsonTransferir == null && !JsonObjectDialog.get("dialog_node").getAsString().equals("start")){
 			response.getText().remove(0);
 			response.getText().add("OK, Eu entendi, mas poderia me dizer o código da sua carteira, ou o número do CPF do titular?");
 			response.getContext().put("system", "{dialog_stack=[{dialog_node=Documento}], dialog_turn_counter=2.0, dialog_request_counter=2.0, _node_output_map={start=[0.0], Documento=[0.0]}}");
@@ -91,9 +92,15 @@ public class ChatHapVidaManager {
 		retorno.append("\",");
 		retorno.append("\"audio\":\"" + JsonObjectDialog.get("dialog_node").getAsString().toString().toLowerCase());
 		retorno.append("\",");
+
+		if("transferir".equals(JsonObjectDialog.get("dialog_node").getAsString().toString().toLowerCase())){
+			retorno.append("\"destino\":\"2070");
+			retorno.append("\",");
+		}
+		
 		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
-
+				 
 		return retorno.toString();
 	}
 
@@ -102,6 +109,7 @@ public class ChatHapVidaManager {
 		tagsFinais.add("Agenda_Doutor");
 		tagsFinais.add("Agenda_Doutora");
 		tagsFinais.add("Fim_Agendamento");
+		tagsFinais.add("Transferir");
 		
 		String returno = "continuar";
 		if(tagsFinais.contains(response.getOutput().get("nodes_visited").toString())){
