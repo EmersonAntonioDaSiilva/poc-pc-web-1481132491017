@@ -75,13 +75,6 @@ public class ChatHapVidaManager {
 
 	private String formJson(MessageResponse response) {
 		StringBuffer retorno = new StringBuffer();
-		JsonParser parser = new JsonParser();
-
-		Object objSystem = parser.parse(response.getContext().get("system").toString());
-		JsonObject jsonObjectSystem = (JsonObject) objSystem;
-		JsonArray JsonArrayDialog_stack = (JsonArray) jsonObjectSystem.get("dialog_stack");
-		JsonObject JsonObjectDialog = (JsonObject) JsonArrayDialog_stack.get(0);
-
 		
 		retorno.append("{\"");
 		retorno.append("result\":\"" + response.getText().get(0));
@@ -90,10 +83,10 @@ public class ChatHapVidaManager {
 		retorno.append("\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system"));
 		retorno.append("\",");
-		retorno.append("\"audio\":\"" + JsonObjectDialog.get("dialog_node").getAsString().toString().toLowerCase());
+		retorno.append("\"audio\":\"" + response.getOutput().get("caixa"));
 		retorno.append("\",");
 
-		if("transferir".equals(JsonObjectDialog.get("dialog_node").getAsString().toString().toLowerCase())){
+		if("transferir".equals(response.getOutput().get("caixa"))){
 			retorno.append("\"destino\":\"2070");
 			retorno.append("\",");
 		}
@@ -101,6 +94,7 @@ public class ChatHapVidaManager {
 		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
 				 
+		System.out.println(retorno.toString());
 		return retorno.toString();
 	}
 
