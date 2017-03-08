@@ -94,7 +94,6 @@ public class ChatHapVidaManager {
 		retorno.append("\"action\":\"" + getAction(response));		
 		retorno.append("\"}");
 				 
-		System.out.println(retorno.toString());
 		return retorno.toString();
 	}
 
