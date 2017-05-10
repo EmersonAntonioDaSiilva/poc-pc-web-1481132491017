@@ -47,7 +47,14 @@ public class ChatManager {
 		String acao = (String) (response.getOutput().containsKey("acao") == true ? response.getOutput().get("acao") : "");
 
 		retorno.append("{\"");
-		retorno.append("result\":\"" + response.getText().get(0) + "\",");
+
+		String retornoTexto = "";
+		for (String texto : response.getText()) {
+			retornoTexto += texto + "</br>";
+		}
+
+		retorno.append("result\":\"" + retornoTexto + "\",");
+
 		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence() + "\",");
 		retorno.append("\"conversation_id\":\"" + response.getContext().get("conversation_id") + "\",");
 		retorno.append("\"system\":\"" + response.getContext().get("system") + "\",");

@@ -31,19 +31,19 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageRequest;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 
 public class Conversation {
-	 private final Logger systemLog = LoggerFactory.getLogger(Conversation.class);
-	 
-	 
+
+	private final Logger systemLog = LoggerFactory.getLogger(Conversation.class);
+
 	private ConversationService service;
 
 	private String workspaceId;
 	private String username;
 	private String password;
-	
+
 	private static final String EMPTY = "";
 
 	public Conversation() {
-		service = new ConversationService(ConversationService.VERSION_DATE_2016_09_20);
+		service = new ConversationService(ConversationService.VERSION_DATE_2017_02_03);
 		service.setApiKey(EMPTY);
 	}
 
@@ -53,7 +53,7 @@ public class Conversation {
 	}
 
 	private MessageResponse formatTxtWatson(String texto, String context, String system) {
-		MessageRequest request  = new MessageRequest.Builder().inputText(texto).alternateIntents(true).context(convertJsonfromMap(context, system)).build();
+		MessageRequest request = new MessageRequest.Builder().inputText(texto).alternateIntents(true).context(convertJsonfromMap(context, system)).build();
 		MessageResponse response = service.message(workspaceId, request).execute();
 
 		BasicConfigurator.configure();
@@ -64,7 +64,7 @@ public class Conversation {
 		//systemLog.info("dadosExtras: {}", response.getContext().get("dadosExtras"));
 		systemLog.info("================================================================================");
 		BasicConfigurator.resetConfiguration();
-		
+
 		return response;
 	}
 
@@ -76,7 +76,7 @@ public class Conversation {
 
 				context = new HashMap<>();
 				context.put("conversation_id", conversation_id);
-				
+
 				Object objSystem = parser.parse(system);
 				JsonObject jsonObjectSystem = (JsonObject) objSystem;
 				context.put("system", jsonObjectSystem);

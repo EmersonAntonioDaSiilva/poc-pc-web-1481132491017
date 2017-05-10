@@ -1,12 +1,11 @@
 applications:
 - path: target/poc-pc-web.war
-  memory: 512M
+  memory: 1024M
   instances: 1
   domain: mybluemix.net
   name: poc-pc-web
   host: poc-pc-web
   disk_quota: 1024M
   services:
-  - Conversation-PC
-  - S2T-PC
+  - Dipol-Chatbot
   - availability-monitoring-auto
