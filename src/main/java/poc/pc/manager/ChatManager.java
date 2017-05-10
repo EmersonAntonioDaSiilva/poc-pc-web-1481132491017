@@ -17,13 +17,13 @@ import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
 
 @Path("/policia-civil")
 public class ChatManager {
-	
+
 	@Inject
 	private Conversation conversation;
 
-	private static String workspaceId = "acfc6b01-ee0a-4614-ad94-858a33807290";
-	private static String username = "377ab19c-3ab6-4f2a-af10-2e461e77d7c2";
-	private static String password = "XKjXU2vqxM0d";
+	private static String workspaceId = "4e7f07c7-6320-485d-8ef0-8a6fe06d1a6e";
+	private static String username = "8561b01a-106f-4dcf-b279-5fb3d71c5a80";
+	private static String password = "g1SXhm7iDPep";
 
 	@GET
 	@Path("/json/{dialog}/{conversation_id}/{system}")

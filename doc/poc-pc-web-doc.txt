@@ -1,0 +1,68 @@
+Start
+	- Saudações
+
+Socorro
+	- Aleterta de ajuda
+		- alguem pode me ajudar
+		- alguém pode me ajudar
+		- estou muito nervosa
+		- estou muito nervoso
+		- Me ajuda
+		- quem pode me ajudar
+		- você pode me ajudar
+		- socorro
+		
+Roubo
+	- Caracteristicas de um roubo
+		- disseram que queriam apenas o carro
+		- Roubaram meu carro
+		- Mandaram que eu entegasse as chaves do carro
+		- Estava parado no farol e fui surpriendido pelos ladroes
+		- O meu carro não esta mais onde estacionei
+		- Meu carro não esta na garagem
+
+
+Furto, Assalto
+	- Caracteristica de um furto
+		- Assalto e exigir a entrega do celular e do ipod
+		- A vitima informou que se encontrava à pé
+		- Levaram meu aparelho celular e a bicicleta
+		- Levaram a aliança de ouro.
+		- Obrigou que lhes entregassem seus pertences
+		- Roubaram minha bolsa
+		- Assaltaram meu aparelho celular
+		- foi abordado por dois desconhecidos que chegaram a pé
+		- adolescente infrator passou ao meu lado na calçada e levaram minha bolça
+		- aproximaram fazendo um arrastão
+		- foram cercados por cinco indivíduos que
+		- Roubaram o meu celular
+
+Armado
+	- Ele estava com uuma faca no seu bolso
+	- ameaçaram com uma faca
+	- em posse de uma faca 
+	- Mostrou uma arma guardada na cintura
+	- Colocou uma faca nas minhas costas
+	- Apontou uma arma nas minhas costas
+	- disse que tinha uma faca
+	- Tentou agredir-me com uma faca
+	- Com uma arma na mão
+	- exibiram a arma de fogo
+	- Armado com um revólver
+	- sob ameaça com arma de fogo
+	- efetuaram um disparo com arma de fogo
+	- simulando a posse de uma arma de fogo
+	- Dizendo estar armado
+	- Estavam com uma das mãos sob a blusa
+	- simulou que estava armado colocando a mão por baixo da blusa
+
+
+
+Arrogandoa
+	- Chingar os policiaos
+
+Nervosismo
+	- Falar Palavroes
+
+Agradecimento
+	- Agradescer o atendimento
