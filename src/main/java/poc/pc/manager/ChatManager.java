@@ -56,11 +56,17 @@ public class ChatManager {
 		retorno.append("result\":\"" + retornoTexto + "\",");
 
 		retorno.append("\"confianca\":\"" + response.getIntents().get(0).getConfidence() + "\",");
+
 		retorno.append("\"conversation_id\":\"" + response.getContext().get("conversation_id") + "\",");
+
 		retorno.append("\"system\":\"" + response.getContext().get("system") + "\",");
+
 		retorno.append("\"intent\":\"" + response.getIntents().get(0).getIntent() + "\",");
+
 		retorno.append("\"acao\":\"" + acao + "\",");
+
 		retorno.append("\"intencao\":\"" + response.getIntents().get(0).getIntent());
+
 		retorno.append("\"}");
 
 		return retorno.toString();
