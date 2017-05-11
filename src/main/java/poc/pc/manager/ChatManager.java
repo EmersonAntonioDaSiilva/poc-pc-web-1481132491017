@@ -50,7 +50,7 @@ public class ChatManager {
 
 		String retornoTexto = "";
 		for (String texto : response.getText()) {
-			retornoTexto += texto + "</br>";
+			retornoTexto += texto;
 		}
 
 		retorno.append("result\":\"" + retornoTexto + "\",");

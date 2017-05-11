@@ -61,7 +61,6 @@ public class Conversation {
 		systemLog.info("Watson: {}", response.getText().get(0));
 		systemLog.info("conversation_id: {}", response.getContext().get("conversation_id"));
 		systemLog.info("system: {}", response.getContext().get("system"));
-		//systemLog.info("dadosExtras: {}", response.getContext().get("dadosExtras"));
 		systemLog.info("================================================================================");
 		BasicConfigurator.resetConfiguration();
 
